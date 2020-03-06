@@ -126,7 +126,7 @@ public class Caminho {
 	 *
 	 * muta o caminho atual para criar um derivado dele aleatoriamente
 	 */
-	public void mutacaoL(Content[][] matriz){
+	public void mutacao(Content[][] matriz){
 		int elementoMudar = r.nextInt(caminho.size());
 		
 		if(elementoMudar == 0)
