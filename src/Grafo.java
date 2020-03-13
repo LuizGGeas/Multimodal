@@ -4,11 +4,12 @@
  */
 
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Grafo {
 	
-	private Content[][] matriz;
+	static private Content[][] matriz;
 	private int size;
 	ArrayList<Aresta> arestas;
 	
@@ -49,7 +50,7 @@ public class Grafo {
 		return caminho;
 	}
 	
-	Caminho cruzar(ArrayList<Caminho> caminhos) {
+	static Caminho cruzar(ArrayList<Caminho> caminhos) {
 		Collections.sort(caminhos, (a, b) -> a.getFitness() < b.getFitness() ? -1 : 1);
 		Caminho c1 = caminhos.get(0), c2 = caminhos.get(1);
 		System.out.print(c1 + " + " + c2 + " = ");
@@ -61,14 +62,21 @@ public class Grafo {
 		return path.validacao(matriz);
 	}
 	
-	void mutacao(ArrayList<Caminho> caminhos){
+	static void mutacao(ArrayList<Caminho> caminhos){
 		Collections.sort(caminhos, (a, b) -> a.getFitness() > b.getFitness() ? -1 : 1);
 		caminhos.get(0).mutacao(matriz);
 		System.out.println(caminhos.get(0));
 		System.out.println(caminhos.get(0).validacao(matriz));
 	}
 	
-	ArrayList<Caminho> selecao(ArrayList<Caminho> caminhos) {
+	void populacao(ArrayList<Caminho> caminhos) {
+		ArrayList<Caminho> novos = selecao(caminhos);
+		Collections.sort(caminhos, (a,b) -> a.getFitness() > b.getFitness() ? -1 : 1);
+		caminhos.removeIf(a -> a.getFitness()>50);
+		caminhos.addAll(novos);
+	}
+	
+	static ArrayList<Caminho> selecao(ArrayList<Caminho> caminhos) {
 		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
 		for(int j = 0; j < 10; j++) {
 			ArrayList<Caminho> seletos = new ArrayList<>();

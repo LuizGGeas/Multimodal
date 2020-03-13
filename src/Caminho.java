@@ -94,27 +94,36 @@ public class Caminho {
 	 */
 	
 	public ArrayList<Integer> cross(Caminho c2, Content[][] matriz){
-		int i = 0;
-		for(int c: caminho){
-			if(c>=0 && c<26 && c2.caminho.contains(c))
-				i = c;
-			else
-				break;
-		}
+		
 		ArrayList<Integer> path = new ArrayList<>();
-		if(i!= 0){
-			System.out.println("mix");
-			path.addAll(caminho.subList(0, caminho.indexOf(i)));
-			path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));
-		}
-		else{
-			if(fitness < c2.fitness){
-				System.out.println("c1");
-				path.addAll(caminho);
+		if(c2.getPath().size() != caminho.size()){
+			int i = 0;
+			for(int c: caminho){
+				if(c>=0 && c<26 && c2.caminho.contains(c))
+					i = c;
+				else
+					break;
+			}
+			
+			if(i!= 0){
+				System.out.println("mix");
+				path.addAll(caminho.subList(0, caminho.indexOf(i)));
+				path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));
 			}
 			else{
-				System.out.println("c2");
-				path.addAll(c2.caminho);
+				if(fitness < c2.fitness){
+					System.out.println("c1");
+					path.addAll(caminho);
+				}
+				else{
+					System.out.println("c2");
+					path.addAll(c2.caminho);
+				}
+			}
+		}
+		else {
+			for(int j = 0; j < caminho.size(); j++){
+			
 			}
 		}
 		return path;
