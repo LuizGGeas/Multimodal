@@ -61,13 +61,14 @@ public class Caminho {
 	
 	public void setTrocas(Content[][] matriz){
 		for(int i = 0; i < caminho.size()-1; i++){
+			
 			if(matriz[caminho.get(i)][caminho.get(i+1)].getTransporte() != Types.TRANSFERENCIA){
 				if(i+2 < caminho.size()-1 && matriz[caminho.get(i)][caminho.get(i+1)].getTransporte() != matriz[caminho.get(i+1)][caminho.get(i+2)].getTransporte())
 					trocas++;
 			}
 			else{
-				if (i+2 < caminho.size()-1 && matriz[caminho.get(i-1)][caminho.get(i)].getTransporte() != matriz[caminho.get(i+1)][caminho.get(i+2)].getTransporte())
-					trocas++;
+				if (i+2 < caminho.size()-1 && matriz[caminho.get(i-1)][caminho.get(i)].getTransporte() == matriz[caminho.get(i+1)][caminho.get(i+2)].getTransporte())
+					trocas--;
 			}
 			trocaList.add(matriz[caminho.get(i)][caminho.get(i+1)].getTransporte());
 		}
