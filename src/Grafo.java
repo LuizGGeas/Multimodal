@@ -4,13 +4,11 @@
  */
 
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Grafo {
 	
 	static private Content[][] matriz;
-	private int size;
 	ArrayList<Aresta> arestas;
 	
 	/**
@@ -22,7 +20,6 @@ public class Grafo {
 	 */
 	
 	Grafo(int size, ArrayList<Aresta> arestas) {
-		this.size = size;
 		this.arestas = arestas;
 		matriz = new Content[size][size];
 		for (int i = 0; i < size; i++) {

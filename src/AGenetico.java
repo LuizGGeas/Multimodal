@@ -27,7 +27,8 @@ public class AGenetico {
 		System.out.println("Lista de transportes usados: " + novo.getTrocaList());
 		System.out.println("custo = " + fitness + ", " +  trocas +" trocas");
 		System.out.println("----------------------------------------------------------------------");
-		caminhos.add(novo);
+		if (!caminhos.contains(novo))
+			caminhos.add(novo);
 	}
 	
 	
@@ -43,10 +44,13 @@ public class AGenetico {
 		}
 		caminhos.addAll(novos);
 		novos = selecao();
-		novos.forEach(r -> r.mutacao(matriz));
-		caminhos.addAll(novos);
+		novos.forEach(r -> {if(r.validacao(matriz))  r.mutacao(matriz);});
+		novos.forEach(r -> { if (!caminhos.contains(r)) caminhos.add(r);});
 		Collections.sort(caminhos, (a,b) -> a.getFitness() == b.getFitness() ? 0 : a.getFitness() > b.getFitness() ? -1 : 1 );
-		caminhos.removeIf(a -> a.getFitness()>50);
+		System.out.println(media());
+		System.out.println(caminhos);
+		
+		System.out.println("Removidos: "+caminhos.removeIf(a -> a.getFitness()>media()));
 	}
 	
 	/**
@@ -65,5 +69,13 @@ public class AGenetico {
 			novoCaminhos.add(seletos.get(0));
 		}
 		return novoCaminhos;
+	}
+	
+	int media() {
+		int j = 0;
+		for(Caminho i: caminhos){
+			j+=i.getFitness();
+		}
+		return j/caminhos.size();
 	}
 }
