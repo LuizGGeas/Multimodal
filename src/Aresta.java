@@ -1,6 +1,8 @@
 /**
- * @author LuizGabriel
+ * @author Luiz Gabriel de S. N.
  * @version 1.0
+ *
+ * Classe responsável pela criação das arestas a inicializarem a matriz
  */
 
 public class Aresta {

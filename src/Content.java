@@ -2,6 +2,8 @@
 /**
  * @author LuizGabriel
  * @version.1.0
+ *
+ * Classe responsável por criar os elementos da matriz
  */
 
 public class Content {

@@ -1,6 +1,9 @@
 /**
- * @author LuizGabriel
+ * @author Luiz Gabriel de S. N.
  * @version 1.0
+ *
+ *
+ * Classe responsável pela inicialização da matriz, de acordo com as arestas previamente informadas
  */
 
 
@@ -13,8 +16,8 @@ public class Grafo {
 	
 	/**
 	 *
-	 * @param size
-	 * @param arestas
+	 * @param size indica o tamanho da matriz
+	 * @param arestas lista de valores a serem utilizados na inicialização da matriz
 	 *
 	 * inicialização da matriz
 	 */
@@ -41,6 +44,11 @@ public class Grafo {
 		return matriz;
 	}
 	
+	
+	/**
+	 * Classe criada para teste de função de validação de caminho
+	 * @return retorna um caminho inválido a ser testado
+	 */
 	Caminho teste1(){
 		ArrayList<Integer> list = new ArrayList<>();
 		list.add(0);

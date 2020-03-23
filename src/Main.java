@@ -1,6 +1,6 @@
 /**
  * @author LuizGabriel
- * @version 1.0
+ * @version 2.3
  */
 
 import java.io.FileOutputStream;
@@ -20,16 +20,15 @@ public class Main {
         for (int i = 0; i < 100; i++) {
             ag.caminhoR();
         }
-        int lm = 0;
+        int lm = 9999999;
         int i = 0;
-        System.out.println(ag.getCaminhos().size());
         do{
             System.out.println("iniciando variação genética");
             i++;
             ios.writeChars("geração: " + i + ": \n");
-            ios.writeChars(ag.getCaminhos().toString());
+            ios.writeChars(ag.getCaminhos().toString() + "\n");
+            ios.writeChars("melhor indivíduo da geração:" + ag.melhor() + "\n");
             ag.populacao();
-            System.out.println(ag.getCaminhos().size());
             if (lm < ag.media()) {
                 ios.writeChars("melhor valor é da geração anterior!!!!");
                 System.out.println("deveria retornar à iteração anterior");
@@ -41,7 +40,7 @@ public class Main {
             System.in.read();
     
         }while(ag.getCaminhos().size()>10);
-        ag.ordenador(0,ag.getCaminhos());
+        ag.ordenador(ag.getCaminhos());
         System.out.println(ag.getCaminhos());
         System.out.println(ag.getCaminhos().get(0));
         ios.close();

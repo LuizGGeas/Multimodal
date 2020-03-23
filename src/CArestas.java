@@ -1,5 +1,11 @@
 import java.util.ArrayList;
 
+/**
+ * @author Luiz Gabriel de S. N.
+ * @version 1.0
+ *
+ * Função para criação de arestas e retorno destas
+ */
 public class CArestas {
 	
 	ArrayList<Aresta> arestas = new ArrayList<>();
