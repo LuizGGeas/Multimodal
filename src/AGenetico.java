@@ -6,9 +6,12 @@ public class AGenetico {
 	
 	private Content[][] matriz;
 	private ArrayList<Caminho> caminhos;
-	AGenetico(Content[][] matriz, ArrayList<Caminho> caminhos){
+	int inicio, end;
+	AGenetico(Content[][] matriz, ArrayList<Caminho> caminhos, int inicio, int end){
 		this.caminhos = caminhos;
 		this.matriz = matriz;
+		this.inicio = inicio;
+		this.end = end;
 	}
 	
 	ArrayList<Caminho> getCaminhos(){
@@ -20,15 +23,30 @@ public class AGenetico {
 	 *  gera caminho aleatóriamente
 	 */
 	void caminhoR() {
-		Caminho novo = new Caminho(matriz, new ArrayList<>(), 0, 26);
+		System.out.println("iniciando geração de caminho");
+		Caminho novo = new Caminho(matriz, new ArrayList<>(), inicio, end);
 		System.out.println("Lista de nós percorridos: " + novo.getPath());
 		int fitness = novo.getFitness();
 		int trocas = novo.getTrocas();
 		System.out.println("Lista de transportes usados: " + novo.getTrocaList());
 		System.out.println("custo = " + fitness + ", " +  trocas +" trocas");
-		System.out.println("----------------------------------------------------------------------");
-		if (!caminhos.contains(novo))
+		
+		if (!caminhos.contains(novo)){
 			caminhos.add(novo);
+			System.out.println("caminho adicionado!!");
+		}
+		else{
+			int i = 10;
+			while(i > 0 && caminhos.contains(novo)){
+				novo = new Caminho(matriz, new ArrayList<>(), inicio, end);
+				i--;
+			}
+			if(i == 0 && caminhos.contains(novo))
+				System.out.println("caminho não adicionado");
+			else
+				caminhos.add(novo);
+		}
+		System.out.println("----------------------------------------------------------------------");
 	}
 	
 	
@@ -42,11 +60,33 @@ public class AGenetico {
 		for(int i = 0; i < novos.size()/2; i++){
 			novos.get(i).cross(novos.get(2*i), matriz);
 		}
-		caminhos.addAll(novos);
+		novos.forEach(r ->{
+			if (!caminhos.contains(r))
+				caminhos.add(r);
+			else {
+				int i = 10;
+				do {
+					r = new Caminho(matriz, new ArrayList<>(), inicio, end);
+					i--;
+				} while (caminhos.contains(r) && i > 0);
+				caminhos.add(r);
+			}
+		});
+		
 		novos = selecao();
-		novos.forEach(r -> {if(r.validacao(matriz))  r.mutacao(matriz);});
-		novos.forEach(r -> { if (!caminhos.contains(r)) caminhos.add(r);});
-		Collections.sort(caminhos, (a,b) -> a.getFitness() == b.getFitness() ? 0 : a.getFitness() > b.getFitness() ? -1 : 1 );
+		novos.forEach(r ->r.mutacao(matriz));
+		novos.forEach(r -> {
+			if (!caminhos.contains(r) && r.validacao(matriz))
+				caminhos.add(r);
+			else{
+				int i = 10;
+				do{
+					r = new Caminho(matriz, new ArrayList<>(), inicio, end);
+					i--;
+				}while(caminhos.contains(r) && i > 0);
+				caminhos.add(r);
+			}
+		});
 		System.out.println(media());
 		System.out.println(caminhos);
 		
@@ -58,14 +98,21 @@ public class AGenetico {
 	 * @return caminhos a serem usados futuramente(tirar dúvida se é para população ou para processamento)
 	 */
 	ArrayList<Caminho> selecao() {
+		int qnt;
+		if(caminhos.size()>10)
+			qnt = (int)(caminhos.size()*0.1);
+		else
+			qnt = (caminhos.size()/2);
+		
+		
 		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
-		for(int j = 0; j < 30; j++) {
+		for(int j = 0; j < qnt; j++) {
 			ArrayList<Caminho> seletos = new ArrayList<>();
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < ((qnt/5) > 0 ? qnt/5 : qnt); i++) {
 				Random r = new Random();
 				seletos.add(caminhos.get(r.nextInt(caminhos.size())));
 			}
-			Collections.sort(seletos, (a, b) -> a.getFitness() < b.getFitness() ? -1 : 1);
+			ordenador(0, seletos);
 			novoCaminhos.add(seletos.get(0));
 		}
 		return novoCaminhos;
@@ -77,5 +124,12 @@ public class AGenetico {
 			j+=i.getFitness();
 		}
 		return j/caminhos.size();
+	}
+	
+	void ordenador(int op, ArrayList<Caminho> lista) {
+		if (op == 0)
+			Collections.sort(lista, (a, b) -> a.getFitness() < b.getFitness() ? -1 : 1);
+		else
+			Collections.sort(lista, (a, b) -> a.getFitness() > b.getFitness() ? -1 : 1);
 	}
 }

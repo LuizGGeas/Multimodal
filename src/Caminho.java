@@ -27,7 +27,7 @@ public class Caminho {
 		if(this.caminho.size() == 0){
 			caminho.add(inicio);
 			int i = 0;
-			while (i != end){
+			while (i <= end){
 				ArrayList<Integer> poss = new ArrayList<>();
 				for(int j = 0; j < 27; j++){
 					if(matriz[i][j].getValue() > 0)
@@ -35,6 +35,7 @@ public class Caminho {
 					
 				}
 				if(!poss.isEmpty()) {
+					poss.removeIf(r-> caminho.contains(r));
 					int no = r.nextInt(poss.size());
 					caminho.add(poss.get(no));
 					i = poss.get(no);
