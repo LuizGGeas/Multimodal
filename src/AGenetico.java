@@ -20,7 +20,7 @@ public class AGenetico {
 	 *  gera caminho aleatóriamente
 	 */
 	void caminhoR() {
-		Caminho novo = new Caminho(matriz, new ArrayList<>());
+		Caminho novo = new Caminho(matriz, new ArrayList<>(), 0, 26);
 		System.out.println("Lista de nós percorridos: " + novo.getPath());
 		int fitness = novo.getFitness();
 		int trocas = novo.getTrocas();

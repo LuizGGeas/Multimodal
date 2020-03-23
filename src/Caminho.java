@@ -22,13 +22,12 @@ public class Caminho {
 	 *
 	 * desenvolvido para gerar caminhos e guardar seu custo durante o processamemto
 	 */
-	Caminho(Content[][] matriz, ArrayList<Integer> caminho){
+	Caminho(Content[][] matriz, ArrayList<Integer> caminho, int inicio, int end){
 		setCaminho(caminho);
 		if(this.caminho.size() == 0){
-			System.out.println("passou pelo 2");
-			caminho.add(0);
+			caminho.add(inicio);
 			int i = 0;
-			while (i <= 26){
+			while (i != end){
 				ArrayList<Integer> poss = new ArrayList<>();
 				for(int j = 0; j < 27; j++){
 					if(matriz[i][j].getValue() > 0)
@@ -40,7 +39,7 @@ public class Caminho {
 					caminho.add(poss.get(no));
 					i = poss.get(no);
 				}
-				if(i == 26)
+				if(i == end)
 					break;
 			}
 		}
@@ -107,17 +106,14 @@ public class Caminho {
 			}
 			
 			if(i!= 0){
-				System.out.println("mix");
 				path.addAll(caminho.subList(0, caminho.indexOf(i)));
 				path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));
 			}
 			else{
 				if(fitness < c2.fitness){
-					System.out.println("c1");
 					path.addAll(caminho);
 				}
 				else{
-					System.out.println("c2");
 					path.addAll(c2.caminho);
 				}
 			}
@@ -147,17 +143,14 @@ public class Caminho {
 		int anterior = caminho.get(elementoMudar-1);
 		ArrayList<Integer> path = new ArrayList<>();
 		for(int i = 0; i < 26; i++){
-			if(matriz[anterior][i].getValue() != 0 && i != caminho.get(elementoMudar))
+			if(matriz[anterior][i].getValue() != 0 && i != caminho.get(elementoMudar) && !caminho.contains(i))
 				path.add(i);
 		}
 		
 		if(path.size() > 0) {
 			int novo = r.nextInt(path.size());
-			if (!caminho.contains(novo)) {
-				caminho.add(elementoMudar, novo);
-				caminho.remove(elementoMudar);
-			} else
-				System.out.println("NAO FOI MUTADO");
+			caminho.add(elementoMudar, novo);
+			caminho.remove(elementoMudar);
 		}
 	}
 	

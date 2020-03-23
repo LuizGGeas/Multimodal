@@ -50,6 +50,6 @@ public class Grafo {
 		list.add(15);
 		list.add(26);
 		
-		return new Caminho(matriz,list);
+		return new Caminho(matriz,list, 0, 26);
 	}
 }
