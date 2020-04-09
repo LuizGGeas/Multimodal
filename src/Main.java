@@ -3,17 +3,17 @@
  * @version 2.3
  */
 
-import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-    
-        ObjectOutputStream ios = new ObjectOutputStream(new FileOutputStream("geracoes.txt"));
-    
+	
+	
+	    FileWriter ios = new FileWriter("geracoes.txt", true);
+    	
         ArrayList<Aresta> arestas = new CArestas().getArestas();
         Grafo g = new Grafo(27, arestas);
         AGenetico ag = new AGenetico(g.getMatriz(), new ArrayList<>(), 0, 26);
@@ -23,14 +23,15 @@ public class Main {
         int lm = 9999999;
         int i = 0;
         do{
+        	ios.flush();
             System.out.println("iniciando variação genética");
             i++;
-            ios.writeChars("geração: " + i + ": \n");
-            ios.writeChars(ag.getCaminhos().toString() + "\n");
-            ios.writeChars("melhor indivíduo da geração:" + ag.melhor() + "\n");
+            ios.write("geração: " + i + ": \n");
+            ios.write(ag.getCaminhos().toString() + "\n");
+            ios.write("melhor indivíduo da geração:" + ag.melhor() + "\n");
             ag.populacao();
             if (lm < ag.media()) {
-                ios.writeChars("melhor valor é da geração anterior!!!!");
+                ios.write("melhor valor é da geração anterior!!!!");
                 System.out.println("deveria retornar à iteração anterior");
                 break;
             }
@@ -43,6 +44,7 @@ public class Main {
         ag.ordenador(ag.getCaminhos());
         System.out.println(ag.getCaminhos());
         System.out.println(ag.getCaminhos().get(0));
+        ios.write("______________________________________________________________________________________________________________________________");
         ios.close();
     }
 }

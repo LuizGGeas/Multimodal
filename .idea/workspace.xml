@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="">
+    <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geracoes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/geracoes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,12 +22,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="527">
+              <caret line="46" column="145" selection-start-line="46" selection-start-column="145" selection-end-line="46" selection-end-column="145" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geracoes.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="32" column="126" selection-start-line="32" selection-start-column="126" selection-end-line="32" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -41,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="-1241">
               <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,7 +111,6 @@
         <option value="$PROJECT_DIR$/src/Vertice.java" />
         <option value="$PROJECT_DIR$/src/Vertices.java" />
         <option value="$PROJECT_DIR$/src/Types.java" />
-        <option value="$PROJECT_DIR$/geracoes.txt" />
         <option value="$PROJECT_DIR$/src/CArestas.java" />
         <option value="$PROJECT_DIR$/src/Grafo.java" />
         <option value="$PROJECT_DIR$/src/Aresta.java" />
@@ -107,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/AGenetico.java" />
         <option value="$PROJECT_DIR$/src/Content.java" />
         <option value="$PROJECT_DIR$/src/TesteContent.java" />
+        <option value="$PROJECT_DIR$/geracoes.txt" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -123,8 +135,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,6 +168,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MInversa" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -267,7 +280,8 @@
       <workItem from="1584990856737" duration="10015000" />
       <workItem from="1585260244050" duration="1634000" />
       <workItem from="1585331641689" duration="587000" />
-      <workItem from="1585338515133" duration="1244000" />
+      <workItem from="1585338515133" duration="1399000" />
+      <workItem from="1586438175672" duration="2007000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -301,20 +315,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144265000" />
+    <option name="totallyTimeSpent" value="146427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44605476" visible="true" weight="0.14599092" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.14750378" />
+      <window_info id="Structure" order="1" sideWeight="0.5032467" side_tool="true" weight="0.1482602" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info active="true" id="Version Control" order="6" sideWeight="0.55394524" side_tool="true" visible="true" weight="0.14599092" />
+      <window_info id="Version Control" order="6" sideWeight="0.55394524" side_tool="true" weight="0.14599092" />
       <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.50402576" />
@@ -327,6 +342,8 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" weight="0.7294686" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4993573" weight="0.3252818" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Flutter Inspector" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -471,34 +488,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TesteContent.java" />
-    <entry file="file://$PROJECT_DIR$/geracoes.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CArestas.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,6 +506,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2125">
           <caret line="133" column="45" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1241">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geracoes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="32" column="126" selection-start-line="32" selection-start-column="126" selection-end-line="32" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="46" column="145" selection-start-line="46" selection-start-column="145" selection-end-line="46" selection-end-column="145" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
