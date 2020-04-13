@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.Random;
 
 /**
@@ -55,7 +55,7 @@ class AGenetico {
 		
 		if (!caminhos.contains(novo)) {
 			if (!novo.validacao(matriz))
-				novo.setFitness(Integer.MAX_VALUE - 1);
+				novo.setFitness();
 			caminhos.add(novo);
 			System.out.println("caminho adicionado!!");
 		} else {
@@ -72,12 +72,12 @@ class AGenetico {
 	 */
 	
 	void populacao() {
-		ArrayList<Caminho> novos = selecao();
+		ArrayList<Caminho> novos = selecao(1);
 		for (int i = 0; i < novos.size() / 2; i++) {
 			novos.get(i).cross(novos.get(2 * i));
 		}
 		novos.forEach(this::adicionarNotRepetidos);
-		novos = selecao();
+		novos = selecao(2);
 		novos.forEach(r -> r.mutacao(matriz));
 		
 		novos.forEach(this::adicionarNotRepetidos);
@@ -109,12 +109,17 @@ class AGenetico {
 	/**
 	 * @return caminhos a serem usados futuramente(tirar dúvida se é para população ou para processamento)
 	 */
-	private ArrayList<Caminho> selecao() {
-		int qnt;
-		if (caminhos.size() > 10)
-			qnt = (int) (caminhos.size() * 0.1);
-		else
-			qnt = (caminhos.size() / 2);
+	private ArrayList<Caminho> selecao(int index) {
+		int qnt = 0;
+		if (index == 1){
+			if (caminhos.size() > 10)
+				qnt = (int) (caminhos.size() * 0.1);
+			else
+				qnt = (caminhos.size() / 2);
+		}
+		else if (index == 2){
+			qnt = (int)Math.ceil(caminhos.size()*0.03);
+		}
 		
 		
 		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
@@ -145,7 +150,7 @@ class AGenetico {
 	 * @return busca o caminho com melhor fitness para salvar em caso de necessidade de comparação posterior
 	 */
 	Caminho melhor() {
-		int i = 999999999;
+		int i = Integer.MAX_VALUE-1;
 		Caminho c1 = null;
 		for (Caminho c : caminhos) {
 			if (c.getFitness() < i) {
@@ -162,6 +167,6 @@ class AGenetico {
 	 * @param lista seleciona a lista a ser ordenada
 	 */
 	void ordenador(ArrayList<Caminho> lista) {
-		Collections.sort(lista, (a, b) -> a.getFitness() < b.getFitness() ? -1 : 1);
+		lista.sort(Comparator.comparingInt(Caminho::getFitness));
 	}
 }

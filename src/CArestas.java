@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @author Luiz Gabriel de S. N.
@@ -6,9 +7,9 @@ import java.util.ArrayList;
  *
  * Função para criação de arestas e retorno destas
  */
-public class CArestas {
+class CArestas {
 	
-	ArrayList<Aresta> arestas = new ArrayList<>();
+	private ArrayList<Aresta> arestas = new ArrayList<>();
 	
 	ArrayList<Aresta> getArestas1(int qnt) {
 		
@@ -59,15 +60,13 @@ public class CArestas {
 		r1[40] = new Aresta(21,19,16, Types.TRANSFERENCIA);
 		
 		
-		for(int i = 0; i < qnt; i++){
-			arestas.add(r1[i]);
-		}
+		arestas.addAll(Arrays.asList(r1).subList(0, qnt));
 		
 		return arestas;
 	}
 	
 	ArrayList<Aresta> getArestas(int qnt) {
-		Aresta r1[] = new Aresta[qnt];
+		Aresta[] r1 = new Aresta[qnt];
 		
 		r1[0] = new Aresta(1,2,7,Types.TREM);
 		r1[1] = new Aresta(1,3,8,Types.ONIBUS);
@@ -128,10 +127,8 @@ public class CArestas {
 		r1[56] = new Aresta(19,15,7,Types.TRANSFERENCIA);
 		r1[57] = new Aresta(19,18,10,Types.TRANSFERENCIA);
 		r1[58] = new Aresta(19,20,2,Types.PRIVADO);
-
-		for(int i = 0; i < qnt; i++){
-			arestas.add(r1[i]);
-		}
+		
+		arestas.addAll(Arrays.asList(r1).subList(0, 59));
 		
 		return arestas;
 	}

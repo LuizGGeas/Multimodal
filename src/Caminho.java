@@ -1,12 +1,12 @@
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  * @author LuizGabriel
  * @version 2.0
  *
  * Classe responsável pela modificação e geração de caminhos factíveis para a população
  */
-
-import java.util.ArrayList;
-import java.util.Random;
 
 public class Caminho {
 	
@@ -17,7 +17,7 @@ public class Caminho {
 	private int inicio;
 	private int end;
 	private int tam;
-	Random r = new Random();
+	private Random r = new Random();
 	
 	
 	
@@ -45,7 +45,7 @@ public class Caminho {
 						poss.add(j);
 				}
 				if(!poss.isEmpty()) {
-					poss.removeIf(r -> caminho.contains(r));
+					poss.removeIf(caminho::contains);
 					
 					if(poss.isEmpty())
 						break;
@@ -73,7 +73,7 @@ public class Caminho {
 	
 	}
 	
-	public ArrayList<Integer> getPath(){
+	ArrayList<Integer> getPath(){
 		return caminho;
 	}
 	
@@ -83,7 +83,7 @@ public class Caminho {
 	 * realiza a contagem de transportes utilizados no caminho  utilizando a matriz e o caminho gerado anteriormente
 	 */
 	
-	public void setTrocas(Content[][] matriz){
+	private void setTrocas(Content[][] matriz){
 		for(int i = 0; i < caminho.size()-1; i++){
 			
 			if(matriz[caminho.get(i)][caminho.get(i+1)].getTransporte() != Types.TRANSFERENCIA){
@@ -105,14 +105,14 @@ public class Caminho {
 	 * calcula o peso para percorrer o caminho gerado anteriormente
 	 */
 	
-	public void setFitness(Content[][] matriz){
+	private void setFitness(Content[][] matriz){
 		for(int i = 0; i < caminho.size()-1; i++){
 			this.fitness += matriz[this.caminho.get(i)][this.caminho.get(i+1)].getValue();
 		}
 	}
 	
-	public void setFitness(int fitness){
-		this.fitness = fitness;
+	void setFitness(){
+		this.fitness = Integer.MAX_VALUE-1;
 	}
 	
 	/**
@@ -121,7 +121,7 @@ public class Caminho {
 	 * @return volta um novo caminho para ser possivelmente adicionado à lista de população
 	 */
 	
-	public ArrayList<Integer> cross(Caminho c2){
+	ArrayList<Integer> cross(Caminho c2){
 		
 		ArrayList<Integer> path = new ArrayList<>();
 		if(c2.getPath().size() != caminho.size()){
@@ -164,7 +164,7 @@ public class Caminho {
 	 *
 	 * muta o caminho atual para criar um derivado dele aleatoriamente
 	 */
-	public void mutacao(Content[][] matriz){
+	void mutacao(Content[][] matriz){
 		int elementoMudar = r.nextInt(caminho.size());
 		
 		if(elementoMudar == 0)
@@ -186,19 +186,19 @@ public class Caminho {
 		}
 	}
 	
-	public int getFitness(){
+	int getFitness(){
 		return fitness;
 	}
 	
-	public ArrayList<Types> getTrocaList(){
+	ArrayList<Types> getTrocaList(){
 		return trocaList;
 	}
 	
-	public int getTrocas(){
+	int getTrocas(){
 		return trocas;
 	}
 	
-	public void setCaminho(ArrayList<Integer> caminho) {
+	private void setCaminho(ArrayList<Integer> caminho) {
 		this.caminho = caminho;
 	}
 	
@@ -209,8 +209,10 @@ public class Caminho {
 	
 	@Override
 	public boolean equals(Object obj) {
-		if (this.getPath().equals(((Caminho) obj).getPath()))
-			if (this.getTrocaList().equals(((Caminho) obj).getTrocaList())) return true;
+		if(this.getClass().getName() ==obj.getClass().getName()){
+			if (this.getPath().equals(((Caminho) obj).getPath()))
+				return this.getTrocaList().equals(((Caminho) obj).getTrocaList());
+		}
 		return false;
 	}
 	

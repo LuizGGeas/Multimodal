@@ -1,10 +1,10 @@
+import java.io.*;
+import java.util.*;
+
 /**
  * @author LuizGabriel
  * @version 2.3
  */
-
-import java.io.*;
-import java.util.*;
 
 public class Main {
 
@@ -25,7 +25,6 @@ public class Main {
         int lm = 9999999;
         int i = 0;
         do{
-            System.out.println("iniciando variação genética");
             i++;
             ios.writeChars("geração: " + i + ": \n");
             ios.writeChars(ag.getCaminhos().toString() + "\n");

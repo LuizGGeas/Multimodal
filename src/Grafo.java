@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * @author Luiz Gabriel de S. N.
  * @version 1.0
@@ -6,13 +8,9 @@
  * Classe responsável pela inicialização da matriz, de acordo com as arestas previamente informadas
  */
 
-
-import java.util.*;
-
-public class Grafo {
+class Grafo {
 	
 	static private Content[][] matriz;
-	ArrayList<Aresta> arestas;
 	
 	/**
 	 *
@@ -23,7 +21,6 @@ public class Grafo {
 	 */
 	
 	Grafo(int size, ArrayList<Aresta> arestas) {
-		this.arestas = arestas;
 		matriz = new Content[size][size];
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
