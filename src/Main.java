@@ -3,20 +3,22 @@
  * @version 2.3
  */
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
     
-        ObjectOutputStream ios = new ObjectOutputStream(new FileOutputStream("geracoes.txt", true));
+        ObjectOutputStream ios = new ObjectOutputStream(new FileOutputStream("geracoes1.txt", true));
     
-        ArrayList<Aresta> arestas = new CArestas().getArestas();
-        Grafo g = new Grafo(27, arestas);
-        AGenetico ag = new AGenetico(g.getMatriz(), new ArrayList<>(), 0, 26);
+        CArestas c = new CArestas(59);
+        
+        ArrayList<Aresta> arestas = c.getArestas();
+        
+        Grafo g = new Grafo(21, arestas);
+        AGenetico ag = new AGenetico(g.getMatriz(), new ArrayList<>(), 1, 20,21);
+        
         for (int i = 0; i < 100; i++) {
             ag.caminhoR();
         }
@@ -42,8 +44,10 @@ public class Main {
         }while(ag.getCaminhos().size()>10);
         ios.writeChars("______________________________________________________________________________________________________________________________\n");
         ag.ordenador(ag.getCaminhos());
+        
         System.out.println(ag.getCaminhos());
         System.out.println(ag.getCaminhos().get(0));
+        
         ios.close();
     }
 }

@@ -44,20 +44,4 @@ public class Grafo {
 		return matriz;
 	}
 	
-	
-	/**
-	 * Classe criada para teste de função de validação de caminho
-	 * @return retorna um caminho inválido a ser testado
-	 */
-	Caminho teste1(){
-		ArrayList<Integer> list = new ArrayList<>();
-		list.add(0);
-		list.add(2);
-		list.add(7);
-		list.add(9);
-		list.add(15);
-		list.add(26);
-		
-		return new Caminho(matriz,list, 0, 26);
-	}
 }

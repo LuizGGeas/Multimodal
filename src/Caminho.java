@@ -16,6 +16,7 @@ public class Caminho {
 	private int trocas = 0;
 	private int inicio;
 	private int end;
+	private int tam;
 	Random r = new Random();
 	
 	
@@ -27,29 +28,48 @@ public class Caminho {
 	 * @param end mostra onde o caminho termina
 	 * desenvolvido para gerar caminhos e guardar seu custo durante o processamemto
 	 */
-	Caminho(Content[][] matriz, ArrayList<Integer> caminho, int inicio, int end){
+	Caminho(Content[][] matriz, ArrayList<Integer> caminho, int inicio, int end, int tam){
+		System.out.println("informações de caminho setadas");
 		setCaminho(caminho);
 		this.inicio = inicio;
 		this.end = end;
+		this.tam = tam;
 		if(this.caminho.size() == 0){
 			caminho.add(inicio);
-			int i = 0;
-			while (i <= end){
+			int i = inicio;
+			int it = 0;
+
+			do{
 				ArrayList<Integer> poss = new ArrayList<>();
-				for(int j = 0; j < 27; j++){
+				for(int j = 0; j < tam; j++){
 					if(matriz[i][j].getValue() > 0)
 						poss.add(j);
-					
 				}
 				if(!poss.isEmpty()) {
-					poss.removeIf(r-> caminho.contains(r));
-					int no = r.nextInt(poss.size());
-					caminho.add(poss.get(no));
-					i = poss.get(no);
+					poss.removeIf(r -> caminho.contains(r));
+					
+					if(poss.isEmpty())
+						break;
+					
+					if (poss.contains(end)){
+						caminho.add(end);
+						break;
+					}
+					else {
+						System.out.println(poss.size());
+						int no = r.nextInt(poss.size());
+						caminho.add(poss.get(no));
+						System.out.println(caminho);
+						i = poss.get(no);
+					}
 				}
+				
 				if(i == end)
 					break;
-			}
+				
+				it++;
+				
+			}while (i <= end && it < 1000);
 		}
 		setFitness(matriz);
 		setTrocas(matriz);
@@ -106,7 +126,7 @@ public class Caminho {
 		if(c2.getPath().size() != caminho.size()){
 			int i = 0;
 			for(int c: caminho){
-				if(c>=0 && c<26 && c2.caminho.contains(c))
+				if(c>=inicio && c<end && c2.caminho.contains(c))
 					i = c;
 				else
 					break;
@@ -153,7 +173,7 @@ public class Caminho {
 		
 		int anterior = caminho.get(elementoMudar-1);
 		ArrayList<Integer> path = new ArrayList<>();
-		for(int i = 0; i < 26; i++){
+		for(int i = 0; i < tam; i++){
 			if(matriz[anterior][i].getValue() != 0 && i != caminho.get(elementoMudar) && !caminho.contains(i))
 				path.add(i);
 		}
@@ -189,9 +209,7 @@ public class Caminho {
 	@Override
 	public boolean equals(Object obj) {
 		if (this.getPath().equals(((Caminho) obj).getPath()))
-			if (this.getTrocaList().equals(((Caminho) obj).getTrocaList())) {
-				return true;
-			}
+			if (this.getTrocaList().equals(((Caminho) obj).getTrocaList())) return true;
 		return false;
 	}
 	

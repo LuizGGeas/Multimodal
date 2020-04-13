@@ -13,7 +13,8 @@ class AGenetico {
 	private Content[][] matriz;
 	private ArrayList<Caminho> caminhos;
 	private int inicio;
-	private  int end;
+	private int end;
+	private int tam;
 	
 	/**
 	 *
@@ -24,11 +25,12 @@ class AGenetico {
 	 *
 	 * Realiza a inicialização dos valores a serem utilizados globalmente nesta classe
 	 */
-	AGenetico(Content[][] matriz, ArrayList<Caminho> caminhos, int inicio, int end){
+	AGenetico(Content[][] matriz, ArrayList<Caminho> caminhos, int inicio, int end, int tam){
 		this.caminhos = caminhos;
 		this.matriz = matriz;
 		this.inicio = inicio;
 		this.end = end;
+		this.tam = tam;
 	}
 	
 	ArrayList<Caminho> getCaminhos(){
@@ -41,21 +43,21 @@ class AGenetico {
 	 */
 	void caminhoR() {
 		System.out.println("iniciando geração de caminho");
-		Caminho novo = new Caminho(matriz, new ArrayList<>(), inicio, end);
+		Caminho novo = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
 		System.out.println("Lista de nós percorridos: " + novo.getPath());
 		int fitness = novo.getFitness();
 		int trocas = novo.getTrocas();
 		System.out.println("Lista de transportes usados: " + novo.getTrocaList());
 		System.out.println("custo = " + fitness + ", " +  trocas +" trocas");
 		
-		if (!caminhos.contains(novo)){
+		if (!caminhos.contains(novo) && novo.validacao(matriz)){
 			caminhos.add(novo);
 			System.out.println("caminho adicionado!!");
 		}
 		else{
 			int i = 10;
 			while(i > 0 && caminhos.contains(novo)){
-				novo = new Caminho(matriz, new ArrayList<>(), inicio, end);
+				novo = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
 				i--;
 			}
 			if(i == 0 && caminhos.contains(novo))
@@ -96,7 +98,7 @@ class AGenetico {
 			else{
 				int i = 10;
 				do{
-					r = new Caminho(matriz, new ArrayList<>(), inicio, end);
+					r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
 					i--;
 				}while(caminhos.contains(r) && i > 0);
 				caminhos.add(r);
