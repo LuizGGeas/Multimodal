@@ -29,7 +29,6 @@ public class Caminho {
 	 * desenvolvido para gerar caminhos e guardar seu custo durante o processamemto
 	 */
 	Caminho(Content[][] matriz, ArrayList<Integer> caminho, int inicio, int end, int tam){
-		System.out.println("informações de caminho setadas");
 		setCaminho(caminho);
 		this.inicio = inicio;
 		this.end = end;
@@ -56,10 +55,8 @@ public class Caminho {
 						break;
 					}
 					else {
-						System.out.println(poss.size());
 						int no = r.nextInt(poss.size());
 						caminho.add(poss.get(no));
-						System.out.println(caminho);
 						i = poss.get(no);
 					}
 				}
@@ -112,6 +109,10 @@ public class Caminho {
 		for(int i = 0; i < caminho.size()-1; i++){
 			this.fitness += matriz[this.caminho.get(i)][this.caminho.get(i+1)].getValue();
 		}
+	}
+	
+	public void setFitness(int fitness){
+		this.fitness = fitness;
 	}
 	
 	/**

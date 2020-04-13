@@ -12,9 +12,9 @@ public class Main {
     
         ObjectOutputStream ios = new ObjectOutputStream(new FileOutputStream("geracoes1.txt", true));
     
-        CArestas c = new CArestas(59);
+        CArestas c = new CArestas();
         
-        ArrayList<Aresta> arestas = c.getArestas();
+        ArrayList<Aresta> arestas = c.getArestas(59);
         
         Grafo g = new Grafo(21, arestas);
         AGenetico ag = new AGenetico(g.getMatriz(), new ArrayList<>(), 1, 20,21);

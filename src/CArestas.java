@@ -8,14 +8,9 @@ import java.util.ArrayList;
  */
 public class CArestas {
 	
-	private int qnt;
 	ArrayList<Aresta> arestas = new ArrayList<>();
 	
-	CArestas(int qnt){
-		this.qnt = qnt;
-	}
-	
-	ArrayList<Aresta> getArestas1() {
+	ArrayList<Aresta> getArestas1(int qnt) {
 		
 		
 		Aresta[] r1 = new Aresta[qnt];
@@ -71,7 +66,7 @@ public class CArestas {
 		return arestas;
 	}
 	
-	ArrayList<Aresta> getArestas() {
+	ArrayList<Aresta> getArestas(int qnt) {
 		Aresta r1[] = new Aresta[qnt];
 		
 		r1[0] = new Aresta(1,2,7,Types.TREM);
