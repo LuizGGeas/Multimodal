@@ -22,7 +22,7 @@ public class Main {
         for (int i = 0; i < 100; i++) {
             ag.caminhoR();
         }
-        int lm = 9999999;
+        int lm = Integer.MAX_VALUE-1;
         int i = 0;
         do{
             i++;

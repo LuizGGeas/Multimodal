@@ -209,7 +209,7 @@ public class Caminho {
 	
 	@Override
 	public boolean equals(Object obj) {
-		if(this.getClass().getName() ==obj.getClass().getName()){
+		if(this.getClass().getName().equals(obj.getClass().getName())){
 			if (this.getPath().equals(((Caminho) obj).getPath()))
 				return this.getTrocaList().equals(((Caminho) obj).getTrocaList());
 		}
