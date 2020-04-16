@@ -3,8 +3,6 @@ import java.util.*;
 /**
  * @author Luiz Gabriel de S. N.
  * @version 1.0
- *
- *
  * Classe responsável pela inicialização da matriz, de acordo com as arestas previamente informadas
  */
 
@@ -13,10 +11,9 @@ class Grafo {
 	static private Content[][] matriz;
 	
 	/**
-	 *
 	 * @param size indica o tamanho da matriz
 	 * @param arestas lista de valores a serem utilizados na inicialização da matriz
-	 *
+	 * <p>
 	 * inicialização da matriz
 	 */
 	

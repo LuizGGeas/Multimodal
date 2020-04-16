@@ -22,8 +22,8 @@ class AGenetico {
 	 * @param inicio   indicado na classe Main
 	 * @param end      indicado na classe Main
 	 * @param tam      contém a quantidade de elementos usados para a geração da matriz
-	 *                 <p>
-	 *                 Realiza a inicialização dos valores a serem utilizados globalmente nesta classe
+	 * <p>
+	 * Realiza a inicialização dos valores a serem utilizados globalmente nesta classe
 	 */
 	AGenetico(Content[][] matriz, ArrayList<Caminho> caminhos, int inicio, int end, int tam) {
 		this.caminhos = caminhos;
@@ -66,7 +66,7 @@ class AGenetico {
 	
 	
 	/**
-	 * Faz todo o processamento da população em todas as gerações
+	 * Faz o processamento da população em todas as gerações
 	 * Realiza a chamada de função de mutação e cruzamento, utilizando da função de seleção
 	 * Faz a seleção elitista dos n melhores elementos, onde estes serão melhores que a média de fitness da população
 	 */
@@ -163,7 +163,6 @@ class AGenetico {
 	
 	/**
 	 * Função de ordenação de listas de acordo com a ordem necessitada
-	 *
 	 * @param lista seleciona a lista a ser ordenada
 	 */
 	void ordenador(ArrayList<Caminho> lista) {

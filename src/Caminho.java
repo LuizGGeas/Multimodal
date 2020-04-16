@@ -80,6 +80,28 @@ public class Caminho {
 	 */
 	
 	private void setTrocas(Content[][] matriz) {
+		for(int i = 0; i < caminho.size()-1; i++){
+			trocaList.add(matriz[caminho.get(i)][caminho.get(i+1)].getTransporte());
+		}
+		
+		for (int i = 0; i < trocaList.size()-1; i++){
+			if ( i + 1 < trocaList.size()-1 && trocaList.get(i+1) == Types.TRANSFERENCIA){
+				int j = i;
+				do{
+					j++;
+				}while(j < trocaList.size()-1 && trocaList.get(j) == Types.TRANSFERENCIA);
+				
+				if(trocaList.get(i) == trocaList.get(j))
+					trocas--;
+			}
+			else{
+				if(trocaList.get(i) != trocaList.get(i+1))
+					trocas++;
+			}
+			
+		}
+		
+		/*
 		for (int i = 0; i < caminho.size() - 1; i++) {
 			
 			if (matriz[caminho.get(i)][caminho.get(i + 1)].getTransporte() != Types.TRANSFERENCIA) {
@@ -90,7 +112,7 @@ public class Caminho {
 					trocas--;
 			}
 			trocaList.add(matriz[caminho.get(i)][caminho.get(i + 1)].getTransporte());
-		}
+		}*/
 	}
 	
 	/**
@@ -126,10 +148,8 @@ public class Caminho {
 			int j = 0;
 			if (contido.size() > 2) {
 				i = contido.get(r.nextInt(contido.size()));
-				
-				do {
-					j = contido.get(r.nextInt(contido.size()));
-				} while (i == j);
+				contido.remove(contido.indexOf(i));
+				j = contido.get(r.nextInt(contido.size()));
 			} else if (contido.size() == 2) {
 				i = contido.get(0);
 				j = contido.get(1);
@@ -139,9 +159,16 @@ public class Caminho {
 				i = 0;
 			
 			if (contido.size() > 1) {
-				path.addAll(caminho.subList(0,i));
-				path.addAll(c2.caminho.subList(i, j));
-				path.addAll(caminho.subList(j, caminho.size()));
+				if(i < j){
+					path.addAll(caminho.subList(0,caminho.indexOf(i)));
+					path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.indexOf(j)));
+					path.addAll(caminho.subList(caminho.indexOf(j), caminho.size()));
+				}
+				else{
+					path.addAll(c2.caminho.subList(0,c2.caminho.indexOf(j)));
+					path.addAll(caminho.subList(caminho.indexOf(j), caminho.indexOf(i)));
+					path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));
+				}
 			} else if (contido.size() == 1) {
 				path.addAll(caminho.subList(0, caminho.indexOf(i)));
 				path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));

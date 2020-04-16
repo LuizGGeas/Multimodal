@@ -4,7 +4,7 @@ import java.util.Arrays;
 /**
  * @author Luiz Gabriel de S. N.
  * @version 1.0
- *
+ * <p>
  * Função para criação de arestas e retorno destas
  */
 class CArestas {
