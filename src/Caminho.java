@@ -36,7 +36,6 @@ public class Caminho {
 			caminho.add(inicio);
 			int i = inicio;
 			int it = 0;
-			
 			do {
 				ArrayList<Integer> poss = new ArrayList<>();
 				for (int j = 0; j < tam; j++) {
@@ -58,17 +57,13 @@ public class Caminho {
 						i = poss.get(no);
 					}
 				}
-				
 				if (i == end)
 					break;
-				
 				it++;
-				
 			} while (i <= end && it < 1000);
 		}
 		setFitness(matriz);
 		setTrocas(matriz);
-		
 	}
 	
 	ArrayList<Integer> getPath() {
@@ -83,7 +78,6 @@ public class Caminho {
 		for(int i = 0; i < caminho.size()-1; i++){
 			trocaList.add(matriz[caminho.get(i)][caminho.get(i+1)].getTransporte());
 		}
-		
 		for (int i = 0; i < trocaList.size()-1; i++){
 			if ( i + 1 < trocaList.size()-1 && trocaList.get(i+1) == Types.TRANSFERENCIA){
 				int j = i;
@@ -98,21 +92,7 @@ public class Caminho {
 				if(trocaList.get(i) != trocaList.get(i+1))
 					trocas++;
 			}
-			
 		}
-		
-		/*
-		for (int i = 0; i < caminho.size() - 1; i++) {
-			
-			if (matriz[caminho.get(i)][caminho.get(i + 1)].getTransporte() != Types.TRANSFERENCIA) {
-				if (i + 2 < caminho.size() - 1 && matriz[caminho.get(i)][caminho.get(i + 1)].getTransporte() != matriz[caminho.get(i + 1)][caminho.get(i + 2)].getTransporte())
-					trocas++;
-			} else {
-				if (i + 2 < caminho.size() - 1 && matriz[caminho.get(i - 1)][caminho.get(i)].getTransporte() == matriz[caminho.get(i + 1)][caminho.get(i + 2)].getTransporte())
-					trocas--;
-			}
-			trocaList.add(matriz[caminho.get(i)][caminho.get(i + 1)].getTransporte());
-		}*/
 	}
 	
 	/**
@@ -125,6 +105,9 @@ public class Caminho {
 		}
 	}
 	
+	/**
+	 *Função usada para setar o fitness de um caminho não factível
+	 */
 	void setFitness() {
 		this.fitness = Integer.MAX_VALUE - 1;
 	}
@@ -133,13 +116,10 @@ public class Caminho {
 	 * @param c2 caminho a ser utilizado para o cruzamento
 	 * @return volta um novo caminho para ser possivelmente adicionado à lista de população
 	 */
-	
-	ArrayList<Integer> cross(Caminho c2) {
-		
+	ArrayList<Integer> cross(Caminho c2, int[] cruzamneto) {
 		ArrayList<Integer> path = new ArrayList<>();
 		if (c2.getPath().size() != caminho.size()) {
 			ArrayList<Integer> contido = new ArrayList<>();
-			
 			caminho.forEach(r -> {
 				if (c2.caminho.contains(r))
 					contido.add(r);
@@ -159,6 +139,7 @@ public class Caminho {
 				i = 0;
 			
 			if (contido.size() > 1) {
+				cruzamneto[0]++;
 				if(i < j){
 					path.addAll(caminho.subList(0,caminho.indexOf(i)));
 					path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.indexOf(j)));
@@ -170,9 +151,11 @@ public class Caminho {
 					path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));
 				}
 			} else if (contido.size() == 1) {
+				cruzamneto[1]++;
 				path.addAll(caminho.subList(0, caminho.indexOf(i)));
 				path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));
 			} else{
+				cruzamneto[3]++;
 				if(fitness < c2.fitness){
 					path.addAll(caminho);
 				}
@@ -181,6 +164,7 @@ public class Caminho {
 				}
 			}
 		} else {
+			cruzamneto[2]++;
 			for (int j = 0; j < caminho.size(); j++) {
 				int i = r.nextInt(2);
 				if (i == 0)
@@ -197,19 +181,16 @@ public class Caminho {
 	 */
 	void mutacao(Content[][] matriz) {
 		int elementoMudar = r.nextInt(caminho.size());
-		
 		if (elementoMudar == 0)
 			elementoMudar++;
 		if (elementoMudar == 26)
 			elementoMudar--;
-		
 		int anterior = caminho.get(elementoMudar - 1);
 		ArrayList<Integer> path = new ArrayList<>();
 		for (int i = 0; i < tam; i++) {
 			if (matriz[anterior][i].getValue() != 0 && i != caminho.get(elementoMudar) && !caminho.contains(i))
 				path.add(i);
 		}
-		
 		if (path.size() > 0) {
 			int novo = r.nextInt(path.size());
 			caminho.add(elementoMudar, novo);
@@ -252,7 +233,6 @@ public class Caminho {
 	 * <p>
 	 * função confere se o caminho fornecido é uma solução para chegar do nó 0 ao nó 26
 	 */
-	
 	boolean validacao(Content[][] matriz) {
 		for (int i = 0; i < caminho.size() - 1; i++) {
 			if (matriz[caminho.get(i)][caminho.get(i + 1)].getValue() <= 0) {
