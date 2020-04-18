@@ -195,6 +195,6 @@ class AGenetico {
 	public String toString() {
 		double val = caminhos.size()>20 ? percent[0] : percent[1];
 		return  selecao[1] + "; " + val + "; " + cruzamento[0] + "; " + cruzamento[1] + "; " + cruzamento[2] + "; " +
-				cruzamento[3] + "; " + percent[2] + "; " + selecao[2] + "; " + mutacao + "; " + selecao[0] + ";";
+				cruzamento[3] + "; " + percent[2] + "; " + selecao[2] + "; " + mutacao + "; " + selecao[0];
 	}
 }

@@ -23,7 +23,7 @@ public class Main {
 		
 		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/tabelas/tabela"+ val +".csv");
 		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(
-				"C:/Users/byeh9/Multimodal/src/populacao/populacao/geracoes"+val+".txt"), StandardCharsets.UTF_8);
+				"C:/Users/byeh9/Multimodal/src/populacao/populacao/geracoes"+val+".txt"), StandardCharsets.ISO_8859_1);
 		CArestas c = new CArestas();
 		ArrayList<Aresta> arestas = c.getArestas(59);
 		Grafo g = new Grafo(21, arestas);
@@ -49,8 +49,6 @@ public class Main {
 			System.out.println("número de caminhos guardados: " + ag.getCaminhos().size());
 			System.out.println("melhor caminho: " + ag.melhor());
 			System.out.println("media atual: " + ag.media());
-			System.out.println("aperte enter para a próxima geração");
-			System.in.read();
 			if(lm >= ag.media()) {
 				lm = ag.media();
 				melhorGeracao = i;
