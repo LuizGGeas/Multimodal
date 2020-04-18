@@ -90,6 +90,8 @@ class AGenetico {
 		for (int i = 0; i < novos.size() / 2; i++) {
 			novos.get(i).cross(novos.get(novos.size()/2 + i), cruzamento);
 		}
+		
+		System.out.println("tamanho inicial da população: " + caminhos.size());
 		novos.forEach(this::adicionarNotRepetidos);
 		novos = selecao(2);
 		novos.forEach(r -> {
@@ -97,13 +99,14 @@ class AGenetico {
 			mutacao++;
 		});
 		novos.forEach(this::adicionarNotRepetidos);
-
+		System.out.println("tamanho após cruzamento e mutação: " + caminhos.size());
 		System.out.println(caminhos);
 		caminhos.forEach(r ->{
 			if(r.getFitness()>media())
 				selecao[0]++;
 		});
 		caminhos.removeIf(caminho -> caminho.getFitness()>media());
+		System.out.println("tamanho após remoção de elementos acima do requerido: " + caminhos.size());
 	}
 	
 	/**

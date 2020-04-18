@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geracoes1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/geracoes1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Caminho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Caminho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tabela.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tabela.csv" afterDir="false" />
     </list>
@@ -26,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="32">
+              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,21 +35,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geracoes1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8244">
-              <caret line="932" column="22" selection-start-line="932" selection-start-column="22" selection-end-line="932" selection-end-column="22" />
+            <state relative-caret-position="36040">
+              <caret line="2120" column="27" selection-start-line="2120" selection-start-column="27" selection-end-line="2120" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tabela.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-446">
-              <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
+              <column index="0" width="100" />
             </state>
           </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="-3764">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-data-editor">
+            <state>
+              <format>
+                <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
+                  <data>
+                    <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                      <quotation>
+                        <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                        <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                      </quotation>
+                    </record-format>
+                  </data>
+                  <header>
+                    <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                      <quotation>
+                        <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                        <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                      </quotation>
+                    </record-format>
+                  </header>
+                </csv-format>
+              </format>
+            </state>
           </provider>
         </entry>
       </file>
@@ -73,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="144" column="32" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
+            <state relative-caret-position="375">
+              <caret line="108" column="80" selection-start-line="108" selection-start-column="80" selection-end-line="108" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
@@ -112,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Grafo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="187">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
               <folding>
                 <element signature="docComment;class#Grafo#0" />
                 <element signature="docComment;method#Grafo#0;class#Grafo#0" />
@@ -123,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Caminho.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="150" column="98" selection-start-line="150" selection-start-column="98" selection-end-line="150" selection-end-column="98" />
+            <state relative-caret-position="191">
+              <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Caminho#0" />
@@ -139,11 +162,11 @@
                 <element signature="docComment;method#setFitness#1;class#Caminho#0" />
                 <element signature="docComment;method#cross#0;class#Caminho#0" />
                 <element signature="docComment;method#mutacao#0;class#Caminho#0" />
-                <element signature="e#6003#6004#0" expanded="true" />
-                <element signature="e#6063#6064#0" expanded="true" />
-                <element signature="e#6104#6105#0" expanded="true" />
-                <element signature="e#6190#6191#0" expanded="true" />
-                <element signature="e#6286#6287#0" expanded="true" />
+                <element signature="e#6310#6311#0" expanded="true" />
+                <element signature="e#6370#6371#0" expanded="true" />
+                <element signature="e#6411#6412#0" expanded="true" />
+                <element signature="e#6497#6498#0" expanded="true" />
+                <element signature="e#6593#6594#0" expanded="true" />
                 <element signature="method#equals#0;class#Caminho#0" />
                 <element signature="docComment;method#validacao#0;class#Caminho#0" />
                 <element signature="method#validacao#0;class#Caminho#0" />
@@ -185,11 +208,11 @@
         <option value="$PROJECT_DIR$/src/CArestas.java" />
         <option value="$PROJECT_DIR$/src/Aresta.java" />
         <option value="$PROJECT_DIR$/src/Grafo.java" />
+        <option value="$PROJECT_DIR$/src/Caminho.java" />
+        <option value="$PROJECT_DIR$/src/AGenetico.java" />
         <option value="$PROJECT_DIR$/geracoes1.txt" />
         <option value="$PROJECT_DIR$/tabela.csv" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/AGenetico.java" />
-        <option value="$PROJECT_DIR$/src/Caminho.java" />
       </list>
     </option>
   </component>
@@ -361,7 +384,7 @@
       <workItem from="1587129217765" duration="7178000" />
       <workItem from="1587158056131" duration="576000" />
       <workItem from="1587158679998" duration="3021000" />
-      <workItem from="1587228599043" duration="3873000" />
+      <workItem from="1587228599043" duration="5155000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -395,7 +418,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186633000" />
+    <option name="totallyTimeSpent" value="187915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -591,25 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Grafo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="docComment;class#Grafo#0" />
-            <element signature="docComment;method#Grafo#0;class#Grafo#0" />
-            <element signature="method#Grafo#0;class#Grafo#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geracoes1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8244">
-          <caret line="932" column="22" selection-start-line="932" selection-start-column="22" selection-end-line="932" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CArestas.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -618,16 +622,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getArestas1#0;class#CArestas#0" />
             <element signature="method#getArestas#0;class#CArestas#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,25 +636,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tabela.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+    <entry file="file://$PROJECT_DIR$/src/Caminho.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Caminho#0" />
+            <element signature="docComment;method#Caminho#0;class#Caminho#0" />
+            <element signature="docComment;method#setTrocas#0;class#Caminho#0" />
+            <element signature="method#setTrocas#0;class#Caminho#0" />
+            <element signature="docComment;method#setFitness#0;class#Caminho#0" />
+            <element signature="method#setFitness#0;class#Caminho#0" />
+            <element signature="docComment;method#setFitness#1;class#Caminho#0" />
+            <element signature="docComment;method#cross#0;class#Caminho#0" />
+            <element signature="docComment;method#mutacao#0;class#Caminho#0" />
+            <element signature="e#6310#6311#0" expanded="true" />
+            <element signature="e#6370#6371#0" expanded="true" />
+            <element signature="e#6411#6412#0" expanded="true" />
+            <element signature="e#6497#6498#0" expanded="true" />
+            <element signature="e#6593#6594#0" expanded="true" />
+            <element signature="method#equals#0;class#Caminho#0" />
+            <element signature="docComment;method#validacao#0;class#Caminho#0" />
+            <element signature="method#validacao#0;class#Caminho#0" />
+          </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-446">
-          <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Grafo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#Grafo#0" />
+            <element signature="docComment;method#Grafo#0;class#Grafo#0" />
+            <element signature="method#Grafo#0;class#Grafo#0" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="144" column="32" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
+        <state relative-caret-position="375">
+          <caret line="108" column="80" selection-start-line="108" selection-start-column="80" selection-end-line="108" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
@@ -682,30 +710,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Caminho.java">
+    <entry file="file://$PROJECT_DIR$/geracoes1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="150" column="98" selection-start-line="150" selection-start-column="98" selection-end-line="150" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Caminho#0" />
-            <element signature="docComment;method#Caminho#0;class#Caminho#0" />
-            <element signature="docComment;method#setTrocas#0;class#Caminho#0" />
-            <element signature="method#setTrocas#0;class#Caminho#0" />
-            <element signature="docComment;method#setFitness#0;class#Caminho#0" />
-            <element signature="method#setFitness#0;class#Caminho#0" />
-            <element signature="docComment;method#setFitness#1;class#Caminho#0" />
-            <element signature="docComment;method#cross#0;class#Caminho#0" />
-            <element signature="docComment;method#mutacao#0;class#Caminho#0" />
-            <element signature="e#6003#6004#0" expanded="true" />
-            <element signature="e#6063#6064#0" expanded="true" />
-            <element signature="e#6104#6105#0" expanded="true" />
-            <element signature="e#6190#6191#0" expanded="true" />
-            <element signature="e#6286#6287#0" expanded="true" />
-            <element signature="method#equals#0;class#Caminho#0" />
-            <element signature="docComment;method#validacao#0;class#Caminho#0" />
-            <element signature="method#validacao#0;class#Caminho#0" />
-          </folding>
+        <state relative-caret-position="36040">
+          <caret line="2120" column="27" selection-start-line="2120" selection-start-column="27" selection-end-line="2120" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabela.csv">
+      <provider editor-type-id="csv-data-editor">
+        <state>
+          <format>
+            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
+              <data>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </data>
+              <header>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </header>
+            </csv-format>
+          </format>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-3764">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
+          <column index="0" width="100" />
         </state>
       </provider>
     </entry>
