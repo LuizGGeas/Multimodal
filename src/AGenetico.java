@@ -17,7 +17,7 @@ class AGenetico {
 	private int tam;
 	private int[] cruzamento = {0, 0, 0, 0};
 	private int mutacao = 0;
-	private int[] selecao = {0, 0};
+	private int[] selecao = {0, 0, 0};
 	private double[] percent = {0.1, 0.5, 0.03};
 	
 	/**
@@ -76,6 +76,7 @@ class AGenetico {
 		mutacao = 0;
 		selecao[0] = 0;
 		selecao[1] = 0;
+		selecao[2] = 0;
 	}
 	
 	/**
@@ -87,7 +88,7 @@ class AGenetico {
 		reinit();
 		ArrayList<Caminho> novos = selecao(1);
 		for (int i = 0; i < novos.size() / 2; i++) {
-			novos.get(i).cross(novos.get(2 * i), cruzamento);
+			novos.get(i).cross(novos.get(novos.size()/2 + i), cruzamento);
 		}
 		novos.forEach(this::adicionarNotRepetidos);
 		novos = selecao(2);
@@ -98,14 +99,11 @@ class AGenetico {
 		novos.forEach(this::adicionarNotRepetidos);
 
 		System.out.println(caminhos);
-		
-		caminhos.removeIf(r -> {
-			if(r.getFitness() > media()){
+		caminhos.forEach(r ->{
+			if(r.getFitness()>media())
 				selecao[0]++;
-				return true;
-			}
-			return false;
 		});
+		caminhos.removeIf(caminho -> caminho.getFitness()>media());
 	}
 	
 	/**
@@ -127,23 +125,24 @@ class AGenetico {
 	}
 	
 	/**
-	 * @return caminhos a serem usados futuramente(tirar dúvida se é para população ou para processamento)
+	 * @return caminhos a serem usados futuramente
+	 * @param index seleciona para o que será usada a seleção, assim usando diferentes valores que serão utilizados para
+	 *              a geração de novos elementos
 	 */
 	private ArrayList<Caminho> selecao(int index) {
 		int qnt = 0;
 		if (index == 1){
-			if (caminhos.size() > 10)
-				qnt = (int) Math.ceil(caminhos.size() * percent[0]);
-			else
-				qnt = (int) Math.ceil(caminhos.size() * percent[1]);
+			qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
+			if(qnt % 2 != 0)
+				qnt--;
 		}
 		else if (index == 2){
-			qnt = (int)Math.ceil(caminhos.size()*percent[2]);
+			qnt = (caminhos.size()*percent[2]) < 1 ? 1 : (int)Math.floor(caminhos.size()*percent[2]);
 		}
 		
 		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
 		for (int j = 0; j < qnt; j++) {
-			selecao[1]++;
+			selecao[index] = qnt;
 			ArrayList<Caminho> seletos = new ArrayList<>();
 			for (int i = 0; i < ((qnt / 5) > 0 ? qnt / 5 : qnt); i++) {
 				Random r = new Random();
@@ -192,7 +191,7 @@ class AGenetico {
 	@Override
 	public String toString() {
 		double val = caminhos.size()>20 ? percent[0] : percent[1];
-		return  val + "; " + cruzamento[0] + "; " + cruzamento[1] + "; " + cruzamento[2] + "; " + cruzamento[3] + "; " + percent[2] + "; " +
-				mutacao + "; " + selecao[0] + "; " + selecao[1];
+		return  selecao[1] + "; " + val + "; " + cruzamento[0] + "; " + cruzamento[1] + "; " + cruzamento[2] + "; " +
+				cruzamento[3] + "; " + percent[2] + "; " + selecao[2] + "; " + mutacao + "; " + selecao[0] + ";";
 	}
 }

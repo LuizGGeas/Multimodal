@@ -128,7 +128,7 @@ public class Caminho {
 			int j = 0;
 			if (contido.size() > 2) {
 				i = contido.get(r.nextInt(contido.size()));
-				contido.remove(contido.indexOf(i));
+				contido.removeIf(r->r == i);
 				j = contido.get(r.nextInt(contido.size()));
 			} else if (contido.size() == 2) {
 				i = contido.get(0);
@@ -140,15 +140,30 @@ public class Caminho {
 			
 			if (contido.size() > 1) {
 				cruzamneto[0]++;
-				if(i < j){
-					path.addAll(caminho.subList(0,caminho.indexOf(i)));
-					path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.indexOf(j)));
-					path.addAll(caminho.subList(caminho.indexOf(j), caminho.size()));
+				if(caminho.indexOf(i) < caminho.indexOf(j)){
+					if(c2.caminho.indexOf(i) < c2.caminho.indexOf(j)) {
+						path.addAll(caminho.subList(0, caminho.indexOf(i)));
+						path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.indexOf(j)));
+						path.addAll(caminho.subList(caminho.indexOf(j), caminho.size()));
+					}
+					else{
+						path.addAll(caminho.subList(0, caminho.indexOf(i)));
+						path.addAll(c2.caminho.subList(c2.caminho.indexOf(j), c2.caminho.indexOf(i)));
+						path.addAll(caminho.subList(caminho.indexOf(j), caminho.size()));
+					}
 				}
 				else{
-					path.addAll(c2.caminho.subList(0,c2.caminho.indexOf(j)));
-					path.addAll(caminho.subList(caminho.indexOf(j), caminho.indexOf(i)));
-					path.addAll(c2.caminho.subList(c2.caminho.indexOf(i), c2.caminho.size()));
+					if(c2.caminho.indexOf(i) < c2.caminho.indexOf(j)) {
+						path.addAll(c2.caminho.subList(0,c2.caminho.indexOf(i)));
+						path.addAll(caminho.subList(caminho.indexOf(i), caminho.indexOf(j)));
+						path.addAll(c2.caminho.subList(c2.caminho.indexOf(j), c2.caminho.size()));
+					}
+					else{
+						path.addAll(caminho.subList(0, caminho.indexOf(j)));
+						path.addAll(c2.caminho.subList(c2.caminho.indexOf(j), c2.caminho.indexOf(i)));
+						path.addAll(caminho.subList(caminho.indexOf(i), caminho.size()));
+					}
+					
 				}
 			} else if (contido.size() == 1) {
 				cruzamneto[1]++;
@@ -181,11 +196,15 @@ public class Caminho {
 	 */
 	void mutacao(Content[][] matriz) {
 		int elementoMudar = r.nextInt(caminho.size());
-		if (elementoMudar == 0)
+		if (elementoMudar < inicio)
+			elementoMudar+= 2;
+		else if (elementoMudar == inicio)
 			elementoMudar++;
-		if (elementoMudar == 26)
+		if (elementoMudar > end)
+			elementoMudar-=2;
+		else if (elementoMudar == end)
 			elementoMudar--;
-		int anterior = caminho.get(elementoMudar - 1);
+		int anterior = caminho.get(elementoMudar-1);
 		ArrayList<Integer> path = new ArrayList<>();
 		for (int i = 0; i < tam; i++) {
 			if (matriz[anterior][i].getValue() != 0 && i != caminho.get(elementoMudar) && !caminho.contains(i))
@@ -196,6 +215,11 @@ public class Caminho {
 			caminho.add(elementoMudar, novo);
 			caminho.remove(elementoMudar);
 		}
+		else{
+			caminho.remove(elementoMudar);
+			caminho.add( elementoMudar, r.nextInt(tam));
+		}
+		
 	}
 	
 	int getFitness() {
