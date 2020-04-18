@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geracoes1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/geracoes1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tabela.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tabela.csv" afterDir="false" />
     </list>
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            <state relative-caret-position="103">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,19 +42,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tabela.csv">
           <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-              <column index="0" width="100" />
+            <state showInfoPanel="true" fixedHeaders="false" autoColumnWidthOnOpen="true" rowLines="3">
+              <column index="0" width="300" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-3764">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="455">
+              <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
             </state>
           </provider>
           <provider editor-type-id="csv-data-editor">
             <state>
               <format>
-                <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
+                <csv-format name="Tab-separated (TSV)" id="6578b6c6-d8d7-49ba-a96e-324ef0690512">
                   <data>
                     <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
                       <quotation>
@@ -66,7 +64,7 @@
                     </record-format>
                   </data>
                   <header>
-                    <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                    <record-format prefix="" suffix="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
                       <quotation>
                         <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
                         <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
@@ -384,7 +382,7 @@
       <workItem from="1587129217765" duration="7178000" />
       <workItem from="1587158056131" duration="576000" />
       <workItem from="1587158679998" duration="3021000" />
-      <workItem from="1587228599043" duration="5155000" />
+      <workItem from="1587228599043" duration="6019000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -418,7 +416,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187915000" />
+    <option name="totallyTimeSpent" value="188779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -675,16 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -717,11 +705,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tabela.csv">
       <provider editor-type-id="csv-data-editor">
         <state>
           <format>
-            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
+            <csv-format name="Tab-separated (TSV)" id="6578b6c6-d8d7-49ba-a96e-324ef0690512">
               <data>
                 <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
                   <quotation>
@@ -731,7 +729,7 @@
                 </record-format>
               </data>
               <header>
-                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                <record-format prefix="" suffix="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
                   <quotation>
                     <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
                     <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
@@ -748,13 +746,13 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-3764">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="455">
+          <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-          <column index="0" width="100" />
+        <state showInfoPanel="true" fixedHeaders="false" autoColumnWidthOnOpen="true" rowLines="3">
+          <column index="0" width="300" />
         </state>
       </provider>
     </entry>

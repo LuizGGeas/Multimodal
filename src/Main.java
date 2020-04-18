@@ -15,7 +15,7 @@ public class Main {
 		ArrayList<Aresta> arestas = c.getArestas(59);
 		Grafo g = new Grafo(21, arestas);
 		AGenetico ag = new AGenetico(g.getMatriz(), new ArrayList<>(), 1, 20,21);
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 40; i++) {
 			ag.caminhoR();
 		}
 		int lm = Integer.MAX_VALUE-1;
