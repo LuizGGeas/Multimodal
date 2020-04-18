@@ -1,4 +1,5 @@
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 /**
@@ -9,8 +10,20 @@ import java.util.*;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
-		FileWriter csv = new FileWriter("tabela.csv", true);
-		ObjectOutputStream ios = new ObjectOutputStream(new FileOutputStream("geracoes1.txt", true));
+		FileWriter num = new FileWriter("exec.txt", true);
+		BufferedReader br = new BufferedReader(new FileReader("exec.txt"));
+		int val = 0;
+		while(br.readLine()!=null){
+			val++;
+		}
+		val++;
+		num.append("a\n");
+		num.flush();
+		num.close();
+		
+		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/tabelas/tabela"+ val +".csv");
+		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(
+				"C:/Users/byeh9/Multimodal/src/populacao/populacao/geracoes"+val+".txt"), StandardCharsets.UTF_8);
 		CArestas c = new CArestas();
 		ArrayList<Aresta> arestas = c.getArestas(59);
 		Grafo g = new Grafo(21, arestas);
@@ -27,9 +40,9 @@ public class Main {
 		while(ag.getCaminhos().size()>10){
 			i++;
 			int tam = ag.getCaminhos().size();
-			ios.writeChars("geração: " + i + ": \n");
-			ios.writeChars(ag.getCaminhos().toString() + "\n");
-			ios.writeChars("melhor indivíduo da geração:" + ag.melhor() + "\n");
+			ios.append("geração: " + i + ": \n");
+			ios.append(ag.getCaminhos().toString() + "\n");
+			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
 			ag.populacao();
 			csv.append(i + "; " + tam + "; " + ag.getCaminhos().size() + "; " + ag + "\n");
 			System.out.println("geração " + i);
@@ -44,7 +57,7 @@ public class Main {
 			}
 			if(i >= verificar) {
 				if (lm < ag.media()) {
-					ios.writeChars("melhor valor é da geração anterior!!!!\n");
+					ios.append("melhor valor é da geração " + melhorGeracao + "!!!!\n");
 					System.out.println("deveria retornar à " + melhorGeracao + " iteração");
 					break;
 				}
@@ -52,14 +65,14 @@ public class Main {
 			}
 			lm = ag.media();
 		}
-		ios.writeChars("______________________________________________________________________________________________________________________________\n");
+		ios.append("______________________________________________________________________________________________________________________________\n");
 		ag.ordenador(ag.getCaminhos());
 		System.out.println(ag.getCaminhos());
 		System.out.println(ag.getCaminhos().get(0));
 		csv.append("\n");
 		csv.flush();
 		csv.close();
-		
+		ios.flush();
 		ios.close();
 	}
 }
