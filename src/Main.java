@@ -47,7 +47,7 @@ public class Main {
 		int verificar = 10;
 		int melhorGeracao = 0;
 		csv.append("geracao; tamanhoAntesOP; tamanhoDepoisOP; quantidadeCruzados; taxaCruzamento; NumdoisPontos; NumumPonto;" +
-				" NumOutro; NãoCruzados; taxaMutacao; SerMutado; Nummutacao; NumElitismo;\n");
+				" NumOutro; NãoCruzados; taxaMutacao; SerMutado; Nummutacao; NumElitismo; media;\n");
 		while(ag.getCaminhos().size()>10){
 			i++;
 			int tvec = ag.getCaminhos().size();
@@ -55,7 +55,7 @@ public class Main {
 			ios.append(ag.getCaminhos().toString() + "\n");
 			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
 			ag.populacao(verify);
-			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + "\n");
+			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + ag.media() + ";\n");
 			System.out.println("geração " + i);
 			System.out.println("número de caminhos guardados: " + ag.getCaminhos().size());
 			System.out.println("melhor caminho: " + ag.melhor());
@@ -72,7 +72,6 @@ public class Main {
 				}
 				verificar += 10;
 			}
-			lm = ag.media();
 		}
 		ios.append("______________________________________________________________________________________________________________________________\n");
 		ag.ordenador(ag.getCaminhos());
