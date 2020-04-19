@@ -10,8 +10,9 @@ import java.util.Arrays;
 class CArestas {
 	
 	private ArrayList<Aresta> arestas = new ArrayList<>();
+	private Grafo g;
 	
-	ArrayList<Aresta> getArestas1(int qnt) {
+	Grafo getGrafo1(int qnt) {
 		
 		
 		Aresta[] r1 = new Aresta[qnt];
@@ -61,11 +62,12 @@ class CArestas {
 		
 		
 		arestas.addAll(Arrays.asList(r1).subList(0, qnt));
+		this.g = new Grafo(27, arestas);
 		
-		return arestas;
+		return g;
 	}
 	
-	ArrayList<Aresta> getArestas(int qnt) {
+	Grafo getGrafo(int qnt) {
 		Aresta[] r1 = new Aresta[qnt];
 		
 		r1[0] = new Aresta(1,2,7,Types.TREM);
@@ -129,7 +131,7 @@ class CArestas {
 		r1[58] = new Aresta(19,20,2,Types.PRIVADO);
 		
 		arestas.addAll(Arrays.asList(r1).subList(0, 59));
-		
-		return arestas;
+		this.g = new Grafo(21,arestas);
+		return g;
 	}
 }

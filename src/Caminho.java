@@ -155,7 +155,7 @@ public class Caminho {
 				else{
 					if(c2.caminho.indexOf(i) < c2.caminho.indexOf(j)) {
 						path.addAll(c2.caminho.subList(0,c2.caminho.indexOf(i)));
-						path.addAll(caminho.subList(caminho.indexOf(i), caminho.indexOf(j)));
+						path.addAll(caminho.subList(caminho.indexOf(j), caminho.indexOf(i)));
 						path.addAll(c2.caminho.subList(c2.caminho.indexOf(j), c2.caminho.size()));
 					}
 					else{

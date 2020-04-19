@@ -10,11 +10,21 @@ import java.util.*;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
-		boolean verify = false;
-		String path= verify ? "Arredondamento" : "NaoArredondado";
+		execucao(20, true);
+		execucao(20, false);
+		execucao(40, true);
+		execucao(40, false);
+		execucao(60, true);
+		execucao(60, false);
+		execucao(80, true);
+		execucao(80, false);
 		
-		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+ path +"/exec.txt", true);
-		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/"+ path +"/exec.txt"));
+	}
+	
+	static void execucao(int tam, boolean verify) throws IOException {
+		String path= verify ? "Arredondamento" : "NaoArredondado";
+		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+tam+"/"+ path +"/exec.txt", true);
+		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/"+ tam +"/"+ path +"/exec.txt"));
 		int val = 0;
 		while(br.readLine()!=null){
 			val++;
@@ -23,14 +33,13 @@ public class Main {
 		num.append("a\n");
 		num.flush();
 		num.close();
-		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+path+"/tabelas/tabela"+ val +".csv");
+		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+tam+"/"+path+"/tabelas/tabela"+ val +".csv");
 		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(
-				"C:/Users/byeh9/Multimodal/src/populacao/"+path+"/geracoes/geracoes"+val+".txt"), StandardCharsets.ISO_8859_1);
-		CArestas c = new CArestas();
-		ArrayList<Aresta> arestas = c.getArestas(59);
-		Grafo g = new Grafo(21, arestas);
-		AGenetico ag = new AGenetico(g.getMatriz(), new ArrayList<>(), 1, 20,21);
-		for (int i = 0; i < 40; i++) {
+				"C:/Users/byeh9/Multimodal/src/populacao/"+tam+"/"+path+"/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
+		Grafo c = new CArestas().getGrafo(59);
+		
+		AGenetico ag = new AGenetico(c.getMatriz(), new ArrayList<>(), 1, 20,21);
+		for (int i = 0; i < tam; i++) {
 			ag.caminhoR();
 		}
 		int lm = Integer.MAX_VALUE-1;
@@ -41,12 +50,12 @@ public class Main {
 				" NumOutro; NãoCruzados; taxaMutacao; SerMutado; Nummutacao; NumElitismo;\n");
 		while(ag.getCaminhos().size()>10){
 			i++;
-			int tam = ag.getCaminhos().size();
+			int tvec = ag.getCaminhos().size();
 			ios.append("geração: " + i + ": \n");
 			ios.append(ag.getCaminhos().toString() + "\n");
 			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
 			ag.populacao(verify);
-			csv.append(i + "; " + tam + "; " + ag.getCaminhos().size() + "; " + ag + "\n");
+			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + "\n");
 			System.out.println("geração " + i);
 			System.out.println("número de caminhos guardados: " + ag.getCaminhos().size());
 			System.out.println("melhor caminho: " + ag.melhor());
