@@ -10,8 +10,11 @@ import java.util.*;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
-		FileWriter num = new FileWriter("exec.txt", true);
-		BufferedReader br = new BufferedReader(new FileReader("exec.txt"));
+		boolean verify = false;
+		String path= verify ? "Arredondamento" : "NaoArredondado";
+		
+		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+ path +"/exec.txt", true);
+		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/"+ path +"/exec.txt"));
 		int val = 0;
 		while(br.readLine()!=null){
 			val++;
@@ -20,10 +23,9 @@ public class Main {
 		num.append("a\n");
 		num.flush();
 		num.close();
-		
-		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/tabelas/tabela"+ val +".csv");
+		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+path+"/tabelas/tabela"+ val +".csv");
 		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(
-				"C:/Users/byeh9/Multimodal/src/populacao/populacao/geracoes"+val+".txt"), StandardCharsets.ISO_8859_1);
+				"C:/Users/byeh9/Multimodal/src/populacao/"+path+"/geracoes/geracoes"+val+".txt"), StandardCharsets.ISO_8859_1);
 		CArestas c = new CArestas();
 		ArrayList<Aresta> arestas = c.getArestas(59);
 		Grafo g = new Grafo(21, arestas);
@@ -43,7 +45,7 @@ public class Main {
 			ios.append("geração: " + i + ": \n");
 			ios.append(ag.getCaminhos().toString() + "\n");
 			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
-			ag.populacao();
+			ag.populacao(verify);
 			csv.append(i + "; " + tam + "; " + ag.getCaminhos().size() + "; " + ag + "\n");
 			System.out.println("geração " + i);
 			System.out.println("número de caminhos guardados: " + ag.getCaminhos().size());

@@ -84,16 +84,16 @@ class AGenetico {
 	 * Realiza a chamada de função de mutação e cruzamento, utilizando da função de seleção
 	 * Faz a seleção elitista dos n melhores elementos, onde estes serão melhores que a média de fitness da população
 	 */
-	void populacao() {
+	void populacao(boolean cond) {
 		reinit();
-		ArrayList<Caminho> novos = selecao(1);
+		ArrayList<Caminho> novos = selecao(cond, 1);
 		for (int i = 0; i < novos.size() / 2; i++) {
 			novos.get(i).cross(novos.get(novos.size()/2 + i), cruzamento);
 		}
 		
 		System.out.println("tamanho inicial da população: " + caminhos.size());
 		novos.forEach(this::adicionarNotRepetidos);
-		novos = selecao(2);
+		novos = selecao(cond ,2);
 		novos.forEach(r -> {
 			r.mutacao(matriz);
 			mutacao++;
@@ -132,17 +132,8 @@ class AGenetico {
 	 * @param index seleciona para o que será usada a seleção, assim usando diferentes valores que serão utilizados para
 	 *              a geração de novos elementos
 	 */
-	private ArrayList<Caminho> selecao(int index) {
-		int qnt = 0;
-		if (index == 1){
-			qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
-			if(qnt % 2 != 0)
-				qnt--;
-		}
-		else if (index == 2){
-			qnt = (caminhos.size()*percent[2]) < 1 ? 1 : (int)Math.floor(caminhos.size()*percent[2]);
-		}
-		
+	private ArrayList<Caminho> selecao(boolean cond, int index) {
+		int qnt = Arredondamento(cond, index);
 		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
 		for (int j = 0; j < qnt; j++) {
 			selecao[index] = qnt;
@@ -155,6 +146,27 @@ class AGenetico {
 			novoCaminhos.add(seletos.get(0));
 		}
 		return novoCaminhos;
+	}
+	
+	int Arredondamento(boolean cond, int index){
+		int qnt = 0;
+		if (cond){
+			if (index == 1){
+				qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
+			if(qnt % 2 != 0)
+				qnt--;
+			}
+			else if (index == 2){
+				qnt = (caminhos.size()*percent[2]) < 1 ? 1 : (int)Math.floor(caminhos.size()*percent[2]);
+			}
+		}
+		else{
+			if(index == 1)
+				qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
+			else if(index == 2)
+				qnt = (int)(caminhos.size()*percent[2]);
+		}
+		return qnt;
 	}
 	
 	/**
