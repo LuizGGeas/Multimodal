@@ -6,77 +6,168 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/tabelas/tabela1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/tabelas/tabela1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/tabelas/tabela1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/tabelas/tabela1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/tabelas/tabela1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/populacao/populacao1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/tabelas/tabela1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondamento/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondamento/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondamento/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondamento/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/Arredondamento/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/populacao/populacao1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/populacao/populacao2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/populacao/populacao3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/populacao/populacao4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/populacao/populacao5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao5.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/Arredondamento/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/populacao/populacao1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/populacao/populacao2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/populacao/populacao3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/populacao/populacao4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/populacao/populacao5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao5.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/Arredondamento/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/populacao/populacao1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/populacao/populacao2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/populacao/populacao2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/populacao/populacao3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/populacao/populacao3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/populacao/populacao4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/populacao/populacao4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/populacao/populacao5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/populacao/populacao5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/tabelas/tabela2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/tabelas/tabela3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/tabelas/tabela4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondamento/tabelas/tabela5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao5.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/Arredondamento/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/populacao/populacao1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/populacao/populacao2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/populacao/populacao3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/populacao/populacao4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/populacao/populacao5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao5.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela5.csv" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,15 +180,44 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/populacao/60/Arredondamento/exec.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-736">
+              <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
+                <element signature="method#AGenetico#0;class#AGenetico#0" />
+                <element signature="docComment;method#getCaminhos#0;class#AGenetico#0" />
+                <element signature="docComment;method#caminhoR#0;class#AGenetico#0" />
+                <element signature="method#caminhoR#0;class#AGenetico#0" />
+                <element signature="docComment;method#populacao#0;class#AGenetico#0" />
+                <element signature="docComment;method#adicionarNotRepetidos#0;class#AGenetico#0" />
+                <element signature="method#adicionarNotRepetidos#0;class#AGenetico#0" />
+                <element signature="docComment;method#media#0;class#AGenetico#0" />
+                <element signature="method#media#0;class#AGenetico#0" />
+                <element signature="docComment;method#melhor#0;class#AGenetico#0" />
+                <element signature="method#melhor#0;class#AGenetico#0" />
+                <element signature="docComment;method#ordenador#0;class#AGenetico#0" />
+                <element signature="e#5808#5809#0" expanded="true" />
+                <element signature="e#5871#5872#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -145,10 +265,6 @@
         <option value="$PROJECT_DIR$/src/CArestas.java" />
         <option value="$PROJECT_DIR$/src/Caminho.java" />
         <option value="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela1.csv" />
-        <option value="$PROJECT_DIR$/src/populacao/80/Arredondamento/exec.txt" />
-        <option value="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" />
-        <option value="$PROJECT_DIR$/src/AGenetico.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela4.csv" />
         <option value="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela5.csv" />
         <option value="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela2.csv" />
@@ -158,6 +274,10 @@
         <option value="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" />
         <option value="$PROJECT_DIR$/src/populacao/60/Arredondamento/exec.txt" />
         <option value="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" />
+        <option value="$PROJECT_DIR$/src/populacao/80/Arredondamento/exec.txt" />
+        <option value="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/AGenetico.java" />
       </list>
     </option>
   </component>
@@ -173,8 +293,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,6 +318,44 @@
               <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="populacao" type="462c0819:PsiDirectoryNode" />
+              <item name="20" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
+              <item name="20" type="462c0819:PsiDirectoryNode" />
+              <item name="tabelas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
+              <item name="40" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
+              <item name="40" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
+              <item name="40" type="462c0819:PsiDirectoryNode" />
+              <item name="tabelas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
               <item name="60" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -206,15 +364,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="populacao" type="462c0819:PsiDirectoryNode" />
               <item name="60" type="462c0819:PsiDirectoryNode" />
-              <item name="Arredondamento" type="462c0819:PsiDirectoryNode" />
+              <item name="tabelas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
               <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="populacao" type="462c0819:PsiDirectoryNode" />
-              <item name="60" type="462c0819:PsiDirectoryNode" />
-              <item name="NaoArredondado" type="462c0819:PsiDirectoryNode" />
+              <item name="80" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
+              <item name="80" type="462c0819:PsiDirectoryNode" />
+              <item name="tabelas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -365,7 +530,8 @@
       <workItem from="1587158679998" duration="3021000" />
       <workItem from="1587228599043" duration="12459000" />
       <workItem from="1587304122918" duration="2595000" />
-      <workItem from="1587331233028" duration="3487000" />
+      <workItem from="1587331233028" duration="4157000" />
+      <workItem from="1587405859655" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -399,13 +565,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201301000" />
+    <option name="totallyTimeSpent" value="202580000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.16944024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.17170954" />
       <window_info id="Structure" order="1" sideWeight="0.5032467" side_tool="true" weight="0.1482602" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -526,11 +692,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="código funcional" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/população/geracoes1.txt" />
-    <entry file="file://$PROJECT_DIR$/src/população/tabela.csv" />
-    <entry file="file://$PROJECT_DIR$/src/população/população/geracoes1.txt" />
-    <entry file="file://$PROJECT_DIR$/src/população/população/geracoes0.txt" />
-    <entry file="file://$PROJECT_DIR$/src/populacao/populacao/geracoes0.txt" />
     <entry file="file://$PROJECT_DIR$/src/populacao/populacao/geracoes2.txt" />
     <entry file="file://$PROJECT_DIR$/src/populacao/populacao/geracoes1.txt" />
     <entry file="file://$PROJECT_DIR$/src/populacao/populacao/geracoes3.txt" />
@@ -538,47 +699,12 @@
     <entry file="file://$PROJECT_DIR$/src/populacao/tabelas/tabela3.csv" />
     <entry file="file://$PROJECT_DIR$/src/populacao/tabelas/tabela1.csv" />
     <entry file="file://$PROJECT_DIR$/src/populacao/tabelas/tabela7.csv" />
-    <entry file="file://$PROJECT_DIR$/src/populacao/Arredondamento/exec.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/Arredondamento/exec.txt" />
     <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/tabelas/tabelas" />
     <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/tabelas/tabela3.csv" />
-    <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/tabelas/tabela1.csv">
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-data-editor">
-        <state>
-          <format>
-            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
-              <data>
-                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;">
-                  <quotation>
-                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                  </quotation>
-                </record-format>
-              </data>
-            </csv-format>
-          </format>
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/geracoes/geracoes1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/tabelas/tabela1.csv" />
+    <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/geracoes/geracoes1.txt" />
+    <entry file="file://$PROJECT_DIR$/src/populacao/NaoArredondado/exec.txt" />
     <entry file="file://$PROJECT_DIR$/src/Caminho.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1093">
@@ -611,17 +737,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/40/Arredondamento/tabelas/tabela2.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/populacao/40/tabelas/tabela2.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela2.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao1.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -630,17 +756,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/40/Arredondamento/populacao/populacao2.txt">
+    <entry file="file://$PROJECT_DIR$/src/populacao/40/populacao/populacao2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela1.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-end-line="62" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/tabelas/tabela1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="csv-data-editor">
         <state>
@@ -666,26 +787,28 @@
           </format>
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-end-line="62" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao1.txt">
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/populacao/populacao1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1070" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="452">
           <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/Arredondamento/populacao/populacao2.txt">
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/populacao/populacao2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1594" />
       </provider>
@@ -695,19 +818,19 @@
         <state relative-caret-position="-1594" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela2.csv">
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/tabelas/tabela2.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-245" />
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela2.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao2.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -715,19 +838,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela3.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela4.csv">
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/tabelas/tabela4.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
+          <column index="0" width="100" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="csv-data-editor">
@@ -754,36 +877,34 @@
           </format>
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-          <column index="0" width="100" />
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao4.txt">
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1070" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao5.txt">
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2104" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela3.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/tabelas/tabela3.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao3.txt">
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao3.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela5.csv">
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/tabelas/tabela5.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-data-editor">
         <state>
@@ -809,18 +930,18 @@
           </format>
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao2.txt">
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela2.csv">
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/tabelas/tabela2.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-data-editor">
         <state>
@@ -846,24 +967,9 @@
           </format>
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/exec.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="57" column="103" selection-start-line="57" selection-start-column="103" selection-end-line="57" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -877,10 +983,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/40/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/60/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/tabelas/tabela6.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/40/populacao/populacao6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/40/tabelas/tabela6.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/60/tabelas/tabela6.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/tabelas/tabela6.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="212" selection-start-line="212" selection-end-line="212" />
+        <state relative-caret-position="-736">
+          <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
@@ -901,24 +1068,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/40/Arredondamento/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/Arredondamento/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/60/Arredondamento/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

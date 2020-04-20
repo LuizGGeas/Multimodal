@@ -10,21 +10,16 @@ import java.util.*;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
-		execucao(20, true);
-		execucao(20, false);
-		execucao(40, true);
-		execucao(40, false);
-		execucao(60, true);
-		execucao(60, false);
-		execucao(80, true);
-		execucao(80, false);
+		execucao(20);
+		execucao(40);
+		execucao(60);
+		execucao(80);
 		
 	}
 	
-	static void execucao(int tam, boolean verify) throws IOException {
-		String path= verify ? "Arredondamento" : "NaoArredondado";
-		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+tam+"/"+ path +"/exec.txt", true);
-		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/"+ tam +"/"+ path +"/exec.txt"));
+	static void execucao(int tam) throws IOException {
+		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/exec.txt", true);
+		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/exec.txt"));
 		int val = 0;
 		while(br.readLine()!=null){
 			val++;
@@ -33,9 +28,9 @@ public class Main {
 		num.append("a\n");
 		num.flush();
 		num.close();
-		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"+tam+"/"+path+"/tabelas/tabela"+ val +".csv");
+		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/tabelas/tabela"+ val +".csv");
 		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(
-				"C:/Users/byeh9/Multimodal/src/populacao/"+tam+"/"+path+"/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
+				"C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
 		Grafo c = new CArestas().getGrafo(59);
 		
 		AGenetico ag = new AGenetico(c.getMatriz(), new ArrayList<>(), 1, 20,21);
@@ -48,13 +43,13 @@ public class Main {
 		int melhorGeracao = 0;
 		csv.append("geracao; tamanhoAntesOP; tamanhoDepoisOP; quantidadeCruzados; taxaCruzamento; NumdoisPontos; NumumPonto;" +
 				" NumOutro; NãoCruzados; taxaMutacao; SerMutado; Nummutacao; NumElitismo; media;\n");
-		while(ag.getCaminhos().size()>10){
+		while(ag.getCaminhos().size()>10 && i < 150){
 			i++;
 			int tvec = ag.getCaminhos().size();
 			ios.append("geração: " + i + ": \n");
 			ios.append(ag.getCaminhos().toString() + "\n");
 			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
-			ag.populacao(verify);
+			ag.populacao();
 			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + ag.media() + ";\n");
 			System.out.println("geração " + i);
 			System.out.println("número de caminhos guardados: " + ag.getCaminhos().size());

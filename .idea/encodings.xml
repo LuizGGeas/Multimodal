@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1252">
-    <file url="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao2.txt" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao3.txt" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao4.txt" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/populacao/80/Arredondamento/populacao/populacao5.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/populacao/40/populacao/populacao6.txt" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao2.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao2.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao3.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao4.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/populacao/80/populacao/populacao5.txt" charset="windows-1252" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

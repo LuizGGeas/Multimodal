@@ -26,8 +26,8 @@ class AGenetico {
 	 * @param inicio   indicado na classe Main
 	 * @param end      indicado na classe Main
 	 * @param tam      contém a quantidade de elementos usados para a geração da matriz
-	 * <p>
-	 * Realiza a inicialização dos valores a serem utilizados globalmente nesta classe
+	 *                 <p>
+	 *                 Realiza a inicialização dos valores a serem utilizados globalmente nesta classe
 	 */
 	AGenetico(Content[][] matriz, ArrayList<Caminho> caminhos, int inicio, int end, int tam) {
 		this.caminhos = caminhos;
@@ -68,7 +68,7 @@ class AGenetico {
 		System.out.println("----------------------------------------------------------------------");
 	}
 	
-	void reinit(){
+	void reinit() {
 		cruzamento[0] = 0;
 		cruzamento[1] = 0;
 		cruzamento[2] = 0;
@@ -84,16 +84,16 @@ class AGenetico {
 	 * Realiza a chamada de função de mutação e cruzamento, utilizando da função de seleção
 	 * Faz a seleção elitista dos n melhores elementos, onde estes serão melhores que a média de fitness da população
 	 */
-	void populacao(boolean cond) {
+	void populacao() {
 		reinit();
-		ArrayList<Caminho> novos = selecao(cond, 1);
+		ArrayList<Caminho> novos = selecao(1);
 		for (int i = 0; i < novos.size() / 2; i++) {
-			novos.get(i).cross(novos.get(novos.size()/2 + i), cruzamento);
+			novos.get(i).cross(novos.get(novos.size() / 2 + i), cruzamento);
 		}
 		
 		System.out.println("tamanho inicial da população: " + caminhos.size());
 		novos.forEach(this::adicionarNotRepetidos);
-		novos = selecao(cond ,2);
+		novos = selecao(2);
 		novos.forEach(r -> {
 			r.mutacao(matriz);
 			mutacao++;
@@ -101,11 +101,11 @@ class AGenetico {
 		novos.forEach(this::adicionarNotRepetidos);
 		System.out.println("tamanho após cruzamento e mutação: " + caminhos.size());
 		System.out.println(caminhos);
-		caminhos.forEach(r ->{
-			if(r.getFitness()>media())
+		caminhos.forEach(r -> {
+			if (r.getFitness() > media())
 				selecao[0]++;
 		});
-		caminhos.removeIf(caminho -> caminho.getFitness()>media());
+		caminhos.removeIf(caminho -> caminho.getFitness() > media());
 		System.out.println("tamanho após remoção de elementos acima do requerido: " + caminhos.size());
 	}
 	
@@ -128,12 +128,12 @@ class AGenetico {
 	}
 	
 	/**
-	 * @return caminhos a serem usados futuramente
 	 * @param index seleciona para o que será usada a seleção, assim usando diferentes valores que serão utilizados para
 	 *              a geração de novos elementos
+	 * @return caminhos a serem usados futuramente
 	 */
-	private ArrayList<Caminho> selecao(boolean cond, int index) {
-		int qnt = Arredondamento(cond, index);
+	private ArrayList<Caminho> selecao(int index) {
+		int qnt = Arredondamento(index);
 		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
 		for (int j = 0; j < qnt; j++) {
 			selecao[index] = qnt;
@@ -148,23 +148,14 @@ class AGenetico {
 		return novoCaminhos;
 	}
 	
-	int Arredondamento(boolean cond, int index){
+	int Arredondamento(int index) {
 		int qnt = 0;
-		if (cond){
-			if (index == 1){
-				qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
-			if(qnt % 2 != 0)
+		if (index == 1) {
+			qnt = (caminhos.size() > 20) ? (int) (caminhos.size() * percent[0]) : (int) (caminhos.size() * percent[1]);
+			if (qnt % 2 != 0)
 				qnt--;
-			}
-			else if (index == 2){
-				qnt = (caminhos.size()*percent[2]) < 1 ? 1 : (int)Math.floor(caminhos.size()*percent[2]);
-			}
-		}
-		else{
-			if(index == 1)
-				qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
-			else if(index == 2)
-				qnt = (int)(caminhos.size()*percent[2]);
+		} else if (index == 2) {
+			qnt = (caminhos.size() * percent[2]) < 1 ? 1 : (int) Math.floor(caminhos.size() * percent[2]);
 		}
 		return qnt;
 	}
@@ -184,7 +175,7 @@ class AGenetico {
 	 * @return busca o caminho com melhor fitness para salvar em caso de necessidade de comparação posterior
 	 */
 	Caminho melhor() {
-		int i = Integer.MAX_VALUE-1;
+		int i = Integer.MAX_VALUE - 1;
 		Caminho c1 = null;
 		for (Caminho c : caminhos) {
 			if (c.getFitness() < i) {
@@ -197,6 +188,7 @@ class AGenetico {
 	
 	/**
 	 * Função de ordenação de listas de acordo com a ordem necessitada
+	 *
 	 * @param lista seleciona a lista a ser ordenada
 	 */
 	void ordenador(ArrayList<Caminho> lista) {
@@ -205,8 +197,8 @@ class AGenetico {
 	
 	@Override
 	public String toString() {
-		double val = caminhos.size()>20 ? percent[0] : percent[1];
-		return  selecao[1] + "; " + val + "; " + cruzamento[0] + "; " + cruzamento[1] + "; " + cruzamento[2] + "; " +
-				cruzamento[3] + "; " + percent[2] + "; " + selecao[2] + "; " + mutacao + "; " + selecao[0]+ ";";
+		double val = caminhos.size() > 20 ? percent[0] : percent[1];
+		return selecao[1] + "; " + val + "; " + cruzamento[0] + "; " + cruzamento[1] + "; " + cruzamento[2] + "; " +
+				cruzamento[3] + "; " + percent[2] + "; " + selecao[2] + "; " + mutacao + "; " + selecao[0] + ";";
 	}
 }
