@@ -138,6 +138,9 @@ class AGenetico {
 		return novoCaminhos;
 	}
 	
+	/**
+	 * funcao que define se haverá arredondamento ou não para o processamento das próximas gerações
+	 */
 	private int Arredondamento(boolean cond, int index){
 		int qnt = 0;
 		if (cond){

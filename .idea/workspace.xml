@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
       <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela8.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,17 +31,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="52" column="80" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
+            <state relative-caret-position="306">
+              <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
                 <element signature="method#AGenetico#0;class#AGenetico#0" />
                 <element signature="docComment;method#getCaminhos#0;class#AGenetico#0" />
                 <element signature="docComment;method#caminhoR#0;class#AGenetico#0" />
+                <element signature="method#reinit#0;class#AGenetico#0" />
                 <element signature="docComment;method#populacao#0;class#AGenetico#0" />
+                <element signature="method#populacao#0;class#AGenetico#0" />
                 <element signature="docComment;method#adicionarNotRepetidos#0;class#AGenetico#0" />
                 <element signature="method#adicionarNotRepetidos#0;class#AGenetico#0" />
+                <element signature="docComment;method#selecao#0;class#AGenetico#0" />
+                <element signature="method#selecao#0;class#AGenetico#0" />
+                <element signature="docComment;method#Arredondamento#0;class#AGenetico#0" />
+                <element signature="method#Arredondamento#0;class#AGenetico#0" />
                 <element signature="docComment;method#media#0;class#AGenetico#0" />
                 <element signature="method#media#0;class#AGenetico#0" />
                 <element signature="docComment;method#melhor#0;class#AGenetico#0" />
@@ -363,7 +368,7 @@
       <workItem from="1587304122918" duration="2595000" />
       <workItem from="1587331233028" duration="4157000" />
       <workItem from="1587405859655" duration="1553000" />
-      <workItem from="1587646053852" duration="6376000" />
+      <workItem from="1587646053852" duration="6476000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -397,13 +402,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209900000" />
+    <option name="totallyTimeSpent" value="210000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.17397882" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.17397882" />
       <window_info id="Structure" order="1" sideWeight="0.5032467" side_tool="true" weight="0.1482602" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1113,17 +1118,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="52" column="80" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
+        <state relative-caret-position="306">
+          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
             <element signature="method#AGenetico#0;class#AGenetico#0" />
             <element signature="docComment;method#getCaminhos#0;class#AGenetico#0" />
             <element signature="docComment;method#caminhoR#0;class#AGenetico#0" />
+            <element signature="method#reinit#0;class#AGenetico#0" />
             <element signature="docComment;method#populacao#0;class#AGenetico#0" />
+            <element signature="method#populacao#0;class#AGenetico#0" />
             <element signature="docComment;method#adicionarNotRepetidos#0;class#AGenetico#0" />
             <element signature="method#adicionarNotRepetidos#0;class#AGenetico#0" />
+            <element signature="docComment;method#selecao#0;class#AGenetico#0" />
+            <element signature="method#selecao#0;class#AGenetico#0" />
+            <element signature="docComment;method#Arredondamento#0;class#AGenetico#0" />
+            <element signature="method#Arredondamento#0;class#AGenetico#0" />
             <element signature="docComment;method#media#0;class#AGenetico#0" />
             <element signature="method#media#0;class#AGenetico#0" />
             <element signature="docComment;method#melhor#0;class#AGenetico#0" />
