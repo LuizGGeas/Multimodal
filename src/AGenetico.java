@@ -51,9 +51,6 @@ class AGenetico {
 	 */
 	void caminhoR() {
 		Caminho novo = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
-		int fitness = novo.getFitness();
-		int trocas = novo.getTrocas();
-		
 		if (!caminhos.contains(novo)) {
 			if (!novo.validacao(matriz))
 				novo.setFitness();
@@ -63,7 +60,7 @@ class AGenetico {
 		}
 	}
 	
-	void reinit() {
+	private void reinit() {
 		cruzamento[0] = 0;
 		cruzamento[1] = 0;
 		cruzamento[2] = 0;
@@ -141,7 +138,7 @@ class AGenetico {
 		return novoCaminhos;
 	}
 	
-	int Arredondamento(boolean cond, int index){
+	private int Arredondamento(boolean cond, int index){
 		int qnt = 0;
 		if (cond){
 			if (index == 1){
