@@ -59,10 +59,6 @@ public class Main {
 			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
 			ag.populacao(cond);
 			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + ag.media() + ";\n");
-			System.out.println("geração " + i);
-			System.out.println("número de caminhos guardados: " + ag.getCaminhos().size());
-			System.out.println("melhor caminho: " + ag.melhor());
-			System.out.println("media atual: " + ag.media());
 			if(lm >= ag.media()) {
 				lm = ag.media();
 				melhorGeracao = i;
@@ -70,7 +66,6 @@ public class Main {
 			if(i >= verificar) {
 				if (lm < ag.media()) {
 					ios.append("melhor valor é da geração " + melhorGeracao + "!!!!\n");
-					System.out.println("deveria retornar à " + melhorGeracao + " iteração");
 					break;
 				}
 				verificar += 10;
@@ -78,8 +73,6 @@ public class Main {
 		}
 		ios.append("______________________________________________________________________________________________________________________________\n");
 		ag.ordenador(ag.getCaminhos());
-		System.out.println(ag.getCaminhos());
-		System.out.println(ag.getCaminhos().get(0));
 		csv.append("\n");
 		csv.flush();
 		csv.close();

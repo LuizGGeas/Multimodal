@@ -50,23 +50,17 @@ class AGenetico {
 	 * e garante que caminhos não factiveis sejam logo removidos
 	 */
 	void caminhoR() {
-		System.out.println("iniciando geração de caminho");
 		Caminho novo = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
-		System.out.println("Lista de nós percorridos: " + novo.getPath());
 		int fitness = novo.getFitness();
 		int trocas = novo.getTrocas();
-		System.out.println("Lista de transportes usados: " + novo.getTrocaList());
-		System.out.println("custo = " + fitness + ", " + trocas + " trocas");
 		
 		if (!caminhos.contains(novo)) {
 			if (!novo.validacao(matriz))
 				novo.setFitness();
 			caminhos.add(novo);
-			System.out.println("caminho adicionado!!");
 		} else {
 			adicionarNotRepetidos(novo);
 		}
-		System.out.println("----------------------------------------------------------------------");
 	}
 	
 	void reinit() {
@@ -94,7 +88,6 @@ class AGenetico {
 			novos.get(i).cross(novos.get(novos.size() / 2 + i), cruzamento);
 		}
 		
-		System.out.println("tamanho inicial da população: " + caminhos.size());
 		novos.forEach(this::adicionarNotRepetidos);
 		novos = selecao(2, cond);
 		novos.forEach(r -> {
@@ -102,14 +95,11 @@ class AGenetico {
 			mutacao++;
 		});
 		novos.forEach(this::adicionarNotRepetidos);
-		System.out.println("tamanho após cruzamento e mutação: " + caminhos.size());
-		System.out.println(caminhos);
 		caminhos.forEach(r -> {
 			if (r.getFitness() > media())
 				selecao[0]++;
 		});
 		caminhos.removeIf(caminho -> caminho.getFitness() > media());
-		System.out.println("tamanho após remoção de elementos acima do requerido: " + caminhos.size());
 	}
 	
 	/**
