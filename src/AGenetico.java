@@ -19,6 +19,7 @@ class AGenetico {
 	private int mutacao = 0;
 	private int[] selecao = {0, 0, 0};
 	private double[] percent = {0.1, 0.5, 0.03};
+	private int antes;
 	
 	/**
 	 * @param matriz   gerada na classe Grafo
@@ -77,6 +78,7 @@ class AGenetico {
 		selecao[0] = 0;
 		selecao[1] = 0;
 		selecao[2] = 0;
+		antes = 0;
 	}
 	
 	/**
@@ -86,6 +88,7 @@ class AGenetico {
 	 */
 	void populacao() {
 		reinit();
+		antes = caminhos.size();
 		ArrayList<Caminho> novos = selecao(1);
 		for (int i = 0; i < novos.size() / 2; i++) {
 			novos.get(i).cross(novos.get(novos.size() / 2 + i), cruzamento);
@@ -151,11 +154,12 @@ class AGenetico {
 	int Arredondamento(int index) {
 		int qnt = 0;
 		if (index == 1) {
-			qnt = (caminhos.size() > 20) ? (int) (caminhos.size() * percent[0]) : (int) (caminhos.size() * percent[1]);
-			if (qnt % 2 != 0)
-				qnt--;
+			qnt = (caminhos.size() >= 20) ? (int) Math.floor(caminhos.size() * percent[0]) :
+					(int) Math.floor(caminhos.size() * percent[1]);
+			if (qnt % 2 != 0 && caminhos.size() < qnt++)
+				qnt++;
 		} else if (index == 2) {
-			qnt = (caminhos.size() * percent[2]) < 1 ? 1 : (int) Math.floor(caminhos.size() * percent[2]);
+			qnt = (caminhos.size() * percent[2]) < 1 ? 1 : (int) Math.ceil(caminhos.size() * percent[2]);
 		}
 		return qnt;
 	}
@@ -197,7 +201,7 @@ class AGenetico {
 	
 	@Override
 	public String toString() {
-		double val = caminhos.size() > 20 ? percent[0] : percent[1];
+		double val = antes >= 20 ? percent[0] : percent[1];
 		return selecao[1] + "; " + val + "; " + cruzamento[0] + "; " + cruzamento[1] + "; " + cruzamento[2] + "; " +
 				cruzamento[3] + "; " + percent[2] + "; " + selecao[2] + "; " + mutacao + "; " + selecao[0] + ";";
 	}
