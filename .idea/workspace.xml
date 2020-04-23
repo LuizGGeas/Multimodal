@@ -2,13 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CArestas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CArestas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/populacao/populacao9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela10.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela11.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/tabelas/tabela9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/populacao/populacao9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela10.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela11.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/tabelas/tabela9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/populacao/populacao9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela10.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela11.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/tabelas/tabela9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/exec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/populacao/populacao9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela10.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela11.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/tabelas/tabela9.csv" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +110,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="18">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="153" column="37" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
+            <state relative-caret-position="-714">
+              <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
@@ -59,38 +147,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/populacao/60/tabelas/tabela10.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider editor-type-id="csv-text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="csv-data-editor">
-            <state>
-              <format>
-                <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id" row-numbers="true">
-                  <data>
-                    <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
-                      <quotation>
-                        <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                        <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                      </quotation>
-                    </record-format>
-                  </data>
-                  <header>
-                    <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
-                      <quotation>
-                        <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                        <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                      </quotation>
-                    </record-format>
-                  </header>
-                </csv-format>
-              </format>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CArestas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5950">
+              <caret line="350" column="38" selection-start-line="350" selection-start-column="38" selection-end-line="350" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,7 +174,20 @@
     <findStrings>
       <find>print</find>
       <find>while</find>
+      <find />
+      <find>)</find>
+      <find>new A</find>
+      <find>(</find>
+      <find>}</find>
+      <find>);</find>
     </findStrings>
+    <replaceStrings>
+      <replace>);</replace>
+      <replace>r1[] = = new A</replace>
+      <replace>r1[] = new A</replace>
+      <replace>(</replace>
+      <replace>, null);</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\Users\byeh9\Multimodal\src\população\população</dir>
     </dirStrings>
@@ -137,7 +214,6 @@
         <option value="$PROJECT_DIR$/exec.txt" />
         <option value="$PROJECT_DIR$/src/populacao/NaoArredondado/exec.txt" />
         <option value="$PROJECT_DIR$/src/populacao/NaoArredondado/tabelas/tabela1.csv" />
-        <option value="$PROJECT_DIR$/src/CArestas.java" />
         <option value="$PROJECT_DIR$/src/Caminho.java" />
         <option value="$PROJECT_DIR$/src/populacao/20/Arredondamento/tabelas/tabela1.csv" />
         <option value="$PROJECT_DIR$/src/populacao/80/Arredondamento/tabelas/tabela4.csv" />
@@ -151,11 +227,15 @@
         <option value="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" />
         <option value="$PROJECT_DIR$/src/populacao/80/Arredondamento/exec.txt" />
         <option value="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/populacao/80/tabelas/tabela9.csv" />
-        <option value="$PROJECT_DIR$/src/AGenetico.java" />
         <option value="$PROJECT_DIR$/src/populacao/80/tabelas/tabela10.csv" />
         <option value="$PROJECT_DIR$/src/populacao/60/tabelas/tabela10.csv" />
+        <option value="$PROJECT_DIR$/src/populacao/60/tabelas/tabela11.csv" />
+        <option value="$PROJECT_DIR$/src/populacao/80/tabelas/tabela11.csv" />
+        <option value="$PROJECT_DIR$/src/CArestas.java" />
+        <option value="$PROJECT_DIR$/src/AGenetico.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela4.csv" />
       </list>
     </option>
   </component>
@@ -203,6 +283,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="populacao" type="462c0819:PsiDirectoryNode" />
               <item name="60" type="462c0819:PsiDirectoryNode" />
+              <item name="Arredondado" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="populacao" type="462c0819:PsiDirectoryNode" />
+              <item name="60" type="462c0819:PsiDirectoryNode" />
+              <item name="Arredondado" type="462c0819:PsiDirectoryNode" />
               <item name="tabelas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -357,7 +446,7 @@
       <workItem from="1587304122918" duration="2595000" />
       <workItem from="1587331233028" duration="4157000" />
       <workItem from="1587405859655" duration="1553000" />
-      <workItem from="1587646053852" duration="1083000" />
+      <workItem from="1587646053852" duration="5636000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -391,7 +480,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204607000" />
+    <option name="totallyTimeSpent" value="209160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -407,7 +496,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.7520129" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.2673108" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39774558" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -518,62 +607,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="código funcional" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/populacao/40/tabelas/tabela2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela2.csv" />
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao1.txt" />
-    <entry file="file://$PROJECT_DIR$/src/populacao/40/populacao/populacao2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/tabelas/tabela1.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-end-line="62" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-data-editor">
-        <state>
-          <format>
-            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
-              <data>
-                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;">
-                  <quotation>
-                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                  </quotation>
-                </record-format>
-              </data>
-              <header>
-                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;">
-                  <quotation>
-                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                  </quotation>
-                </record-format>
-              </header>
-            </csv-format>
-          </format>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/populacao/populacao1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1070" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela1.csv" />
-    <entry file="file://$PROJECT_DIR$/src/populacao/20/populacao/populacao2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1594" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao2.txt" />
     <entry file="file://$PROJECT_DIR$/src/populacao/20/tabelas/tabela2.csv">
       <provider editor-type-id="csv-table-editor">
@@ -712,16 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CArestas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" />
     <entry file="file://$PROJECT_DIR$/src/populacao/40/exec.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -827,16 +850,6 @@
     <entry file="file://$PROJECT_DIR$/src/populacao/80/exec.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/populacao/80/tabelas/tabela9.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
@@ -870,29 +883,6 @@
               </header>
             </csv-format>
           </format>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="153" column="37" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
-            <element signature="method#AGenetico#0;class#AGenetico#0" />
-            <element signature="docComment;method#getCaminhos#0;class#AGenetico#0" />
-            <element signature="docComment;method#caminhoR#0;class#AGenetico#0" />
-            <element signature="method#caminhoR#0;class#AGenetico#0" />
-            <element signature="docComment;method#populacao#0;class#AGenetico#0" />
-            <element signature="docComment;method#adicionarNotRepetidos#0;class#AGenetico#0" />
-            <element signature="method#adicionarNotRepetidos#0;class#AGenetico#0" />
-            <element signature="docComment;method#media#0;class#AGenetico#0" />
-            <element signature="method#media#0;class#AGenetico#0" />
-            <element signature="docComment;method#melhor#0;class#AGenetico#0" />
-            <element signature="method#melhor#0;class#AGenetico#0" />
-            <element signature="docComment;method#ordenador#0;class#AGenetico#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,6 +957,213 @@
               </header>
             </csv-format>
           </format>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/60/tabelas/tabela11.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-data-editor">
+        <state>
+          <format>
+            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id" row-numbers="true">
+              <data>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </data>
+              <header>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </header>
+            </csv-format>
+          </format>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/80/tabelas/tabela11.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-data-editor">
+        <state>
+          <format>
+            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id" row-numbers="true">
+              <data>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </data>
+              <header>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </header>
+            </csv-format>
+          </format>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CArestas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5950">
+          <caret line="350" column="38" selection-start-line="350" selection-start-column="38" selection-end-line="350" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AGenetico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#AGenetico#0;class#AGenetico#0" />
+            <element signature="method#AGenetico#0;class#AGenetico#0" />
+            <element signature="docComment;method#getCaminhos#0;class#AGenetico#0" />
+            <element signature="docComment;method#caminhoR#0;class#AGenetico#0" />
+            <element signature="method#caminhoR#0;class#AGenetico#0" />
+            <element signature="docComment;method#populacao#0;class#AGenetico#0" />
+            <element signature="docComment;method#adicionarNotRepetidos#0;class#AGenetico#0" />
+            <element signature="method#adicionarNotRepetidos#0;class#AGenetico#0" />
+            <element signature="docComment;method#media#0;class#AGenetico#0" />
+            <element signature="method#media#0;class#AGenetico#0" />
+            <element signature="docComment;method#melhor#0;class#AGenetico#0" />
+            <element signature="method#melhor#0;class#AGenetico#0" />
+            <element signature="docComment;method#ordenador#0;class#AGenetico#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela4.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-data-editor">
+        <state>
+          <format>
+            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id" row-numbers="true">
+              <data>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </data>
+              <header>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </header>
+            </csv-format>
+          </format>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela4.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-data-editor">
+        <state>
+          <format>
+            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id" row-numbers="true">
+              <data>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </data>
+              <header>
+                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator=";" recordSeparator="&#10;" trimWhitespace="true">
+                  <quotation>
+                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+                  </quotation>
+                </record-format>
+              </header>
+            </csv-format>
+          </format>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela4.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela4.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

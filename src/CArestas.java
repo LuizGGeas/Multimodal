@@ -10,12 +10,11 @@ import java.util.Arrays;
 class CArestas {
 	
 	private ArrayList<Aresta> arestas = new ArrayList<>();
-	private Grafo g;
 	
-	Grafo getGrafo1(int qnt) {
+	Grafo getGrafo1() {
 		
 		
-		Aresta[] r1 = new Aresta[qnt];
+		Aresta[] r1 = new Aresta[41];
 		
 		
 		r1[0] = new Aresta(0,1,1, Types.ONIBUS);
@@ -61,14 +60,13 @@ class CArestas {
 		r1[40] = new Aresta(21,19,16, Types.TRANSFERENCIA);
 		
 		
-		arestas.addAll(Arrays.asList(r1).subList(0, qnt));
-		this.g = new Grafo(27, arestas);
+		arestas.addAll(Arrays.asList(r1));
 		
-		return g;
+		return new Grafo(27, arestas);
 	}
 	
-	Grafo getGrafo(int qnt) {
-		Aresta[] r1 = new Aresta[qnt];
+	Grafo getGrafo() {
+		Aresta[] r1 = new Aresta[59];
 		
 		r1[0] = new Aresta(1,2,7,Types.TREM);
 		r1[1] = new Aresta(1,3,8,Types.ONIBUS);
@@ -130,8 +128,227 @@ class CArestas {
 		r1[57] = new Aresta(19,18,10,Types.TRANSFERENCIA);
 		r1[58] = new Aresta(19,20,2,Types.PRIVADO);
 		
-		arestas.addAll(Arrays.asList(r1).subList(0, 59));
-		this.g = new Grafo(21,arestas);
-		return g;
+		arestas.addAll(Arrays.asList(r1));
+		return new Grafo(21,arestas);
+	}
+	
+	Grafo getGrafo2(int tam){
+		Aresta[] r1= new Aresta[tam];
+		
+		r1[0] = new Aresta(1, 2, 206, null);
+		r1[1] = new Aresta(1, 3, 259, null);
+		r1[2] = new Aresta(1, 4, 349, null);
+		r1[3] = new Aresta(2, 3, 186, null);
+		r1[4] = new Aresta(2, 4, 220, null);
+		r1[5] = new Aresta(2, 9, 354, null);
+		r1[6] = new Aresta(3, 5, 109, null);
+		r1[7] = new Aresta(3, 9, 456, null);
+		r1[8] = new Aresta(3, 12, 451, null);
+		r1[9] = new Aresta(3, 13, 602, null);
+		r1[10] = new Aresta(3, 23, 875, null);
+		r1[11] = new Aresta(4, 10, 137, null);
+		r1[12] = new Aresta(4, 11, 512, null);
+		r1[13] = new Aresta(5, 6, 127, null);
+		r1[14] = new Aresta(5, 12, 368, null);
+		r1[15] = new Aresta(6, 7, 126, null);
+		r1[16] = new Aresta(6, 8, 239, null);
+		r1[17] = new Aresta(6, 12, 277, null);
+		r1[18] = new Aresta(6, 14, 437, null);
+		r1[19] = new Aresta(6, 17, 461, null);
+		r1[20] = new Aresta(6, 22, 623, null);
+		r1[21] = new Aresta(6, 26, 850, null);
+		r1[22] = new Aresta(7, 8, 120, null);
+		r1[23] = new Aresta(7, 14, 380, null);
+		r1[24] = new Aresta(7, 15, 305, null);
+		r1[25] = new Aresta(7, 17, 364, null);
+		r1[26] = new Aresta(7, 18, 778, null);
+		r1[27] = new Aresta(8, 15, 293, null);
+		r1[28] = new Aresta(8, 17, 406, null);
+		r1[29] = new Aresta(9, 11, 58, null);
+		r1[30] = new Aresta(9, 13, 229, null);
+		r1[31] = new Aresta(9, 21, 317, null);
+		r1[32] = new Aresta(10, 11, 297, null);
+		r1[33] = new Aresta(10, 20, 600, null);
+		r1[34] = new Aresta(11, 20, 547, null);
+		r1[35] = new Aresta(11, 21, 275, null);
+		r1[36] = new Aresta(12, 13, 154, null);
+		r1[37] = new Aresta(12, 14, 272, null);
+		r1[38] = new Aresta(12, 22, 350, null);
+		r1[39] = new Aresta(13, 14, 332, null);
+		r1[40] = new Aresta(13, 21, 196, null);
+		r1[41] = new Aresta(13, 22, 295, null);
+		r1[42] = new Aresta(13, 23, 366, null);
+		r1[43] = new Aresta(13, 31, 412, null);
+		r1[44] = new Aresta(13, 40, 814, null);
+		r1[45] = new Aresta(14, 17, 311, null);
+		r1[46] = new Aresta(14, 22, 238, null);
+		r1[47] = new Aresta(14, 24, 646, null);
+		r1[48] = new Aresta(14, 25, 304, null);
+		r1[49] = new Aresta(14, 26, 409, null);
+		r1[50] = new Aresta(15, 17, 234, null);
+		r1[51] = new Aresta(15, 16, 200, null);
+		r1[52] = new Aresta(16, 17, 258, null);
+		r1[53] = new Aresta(16, 18, 280, null);
+		r1[54] = new Aresta(16, 24, 396, null);
+		r1[55] = new Aresta(17, 18, 491, null);
+		r1[56] = new Aresta(17, 24, 299, null);
+		r1[57] = new Aresta(17, 26, 491, null);
+		r1[58] = new Aresta(18, 19, 80, null);
+		r1[59] = new Aresta(18, 24, 419, null);
+		r1[60] = new Aresta(19, 24, 347, null);
+		r1[61] = new Aresta(19, 27, 124, null);
+		r1[62] = new Aresta(20, 21, 420, null);
+		r1[63] = new Aresta(20, 29, 528, null);
+		r1[64] = new Aresta(20, 30, 514, null);
+		r1[65] = new Aresta(20, 31, 589, null);
+		r1[66] = new Aresta(20, 32, 540, null);
+		r1[67] = new Aresta(20, 37, 510, null);
+		r1[68] = new Aresta(20, 39, 725, null);
+		r1[69] = new Aresta(21, 22, 328, null);
+		r1[70] = new Aresta(21, 23, 328, null);
+		r1[71] = new Aresta(21, 31, 335, null);
+		r1[72] = new Aresta(22, 23, 137, null);
+		r1[73] = new Aresta(22, 25, 120, null);
+		r1[74] = new Aresta(22, 24, 577, null);
+		r1[75] = new Aresta(22, 33, 418, null);
+		r1[76] = new Aresta(23, 25, 133, null);
+		r1[77] = new Aresta(23, 31, 216, null);
+		r1[78] = new Aresta(23, 33, 290, null);
+		r1[79] = new Aresta(24, 26, 300, null);
+		r1[80] = new Aresta(24, 28, 178, null);
+		r1[81] = new Aresta(24, 27, 329, null);
+		r1[82] = new Aresta(24, 34, 497, null);
+		r1[83] = new Aresta(24, 36, 622, null);
+		r1[84] = new Aresta(25, 26, 206, null);
+		r1[85] = new Aresta(25, 33, 319, null);
+		r1[86] = new Aresta(26, 28, 228, null);
+		r1[87] = new Aresta(26, 31, 550, null);
+		r1[88] = new Aresta(26, 33, 372, null);
+		r1[89] = new Aresta(26, 34, 247, null);
+		r1[90] = new Aresta(27, 28, 356, null);
+		r1[91] = new Aresta(27, 35, 494, null);
+		r1[92] = new Aresta(28, 34, 276, null);
+		r1[93] = new Aresta(28, 35, 289, null);
+		r1[94] = new Aresta(28, 36, 413, null);
+		r1[95] = new Aresta(29, 37, 193, null);
+		r1[96] = new Aresta(29, 38, 485, null);
+		r1[97] = new Aresta(30, 31, 114, null);
+		r1[98] = new Aresta(30, 32, 96, null);
+		r1[99] = new Aresta(31, 32, 172, null);
+		r1[100] = new Aresta(31, 33, 355, null);
+		r1[101] = new Aresta(31, 40, 408, null);
+		r1[102] = new Aresta(31, 41, 606, null);
+		r1[103] = new Aresta(32, 37, 402, null);
+		r1[104] = new Aresta(32, 39, 324, null);
+		r1[105] = new Aresta(32, 40, 346, null);
+		r1[106] = new Aresta(33, 34, 348, null);
+		r1[107] = new Aresta(33, 39, 664, null);
+		r1[108] = new Aresta(33, 40, 438, null);
+		r1[109] = new Aresta(33, 41, 306, null);
+		r1[110] = new Aresta(33, 46, 427, null);
+		r1[111] = new Aresta(33, 47, 398, null);
+		r1[112] = new Aresta(33, 49, 385, null);
+		r1[113] = new Aresta(34, 35, 230, null);
+		r1[114] = new Aresta(34, 41, 551, null);
+		r1[115] = new Aresta(34, 46, 158, null);
+		r1[116] = new Aresta(35, 36, 211, null);
+		r1[117] = new Aresta(35, 46, 311, null);
+		r1[118] = new Aresta(35, 49, 494, null);
+		r1[119] = new Aresta(36, 48, 436, null);
+		r1[120] = new Aresta(36, 49, 594, null);
+		r1[121] = new Aresta(37, 38, 351, null);
+		r1[122] = new Aresta(37, 39, 174, null);
+		r1[123] = new Aresta(37, 42, 304, null);
+		r1[124] = new Aresta(38, 43, 143, null);
+		r1[125] = new Aresta(39, 40, 283, null);
+		r1[126] = new Aresta(39, 42, 456, null);
+		r1[127] = new Aresta(39, 44, 445, null);
+		r1[128] = new Aresta(39, 50, 282, null);
+		r1[129] = new Aresta(39, 53, 685, null);
+		r1[130] = new Aresta(39, 56, 1045, null);
+		r1[131] = new Aresta(40, 41, 232, null);
+		r1[132] = new Aresta(40, 44, 162, null);
+		r1[133] = new Aresta(41, 44, 216, null);
+		r1[134] = new Aresta(41, 45, 91, null);
+		r1[135] = new Aresta(41, 46, 448, null);
+		r1[136] = new Aresta(41, 47, 442, null);
+		r1[137] = new Aresta(42, 43, 188, null);
+		r1[138] = new Aresta(42, 50, 288, null);
+		r1[139] = new Aresta(42, 51, 613, null);
+		r1[140] = new Aresta(42, 52, 232, null);
+		r1[141] = new Aresta(43, 51, 429, null);
+		r1[142] = new Aresta(43, 52, 490, null);
+		r1[143] = new Aresta(44, 45, 194, null);
+		r1[144] = new Aresta(44, 50, 208, null);
+		r1[145] = new Aresta(44, 53, 695, null);
+		r1[146] = new Aresta(44, 54, 594, null);
+		r1[147] = new Aresta(44, 56, 646, null);
+		r1[148] = new Aresta(44, 55, 810, null);
+		r1[149] = new Aresta(45, 47, 342, null);
+		r1[150] = new Aresta(45, 56, 634, null);
+		r1[151] = new Aresta(45, 57, 857, null);
+		r1[152] = new Aresta(46, 47, 398, null);
+		r1[153] = new Aresta(46, 49, 385, null);
+		r1[154] = new Aresta(47, 49, 247, null);
+		r1[155] = new Aresta(47, 55, 311, null);
+		r1[156] = new Aresta(47, 56, 754, null);
+		r1[157] = new Aresta(48, 49, 289, null);
+		r1[158] = new Aresta(48, 58, 902, null);
+		r1[159] = new Aresta(49, 55, 436, null);
+		r1[160] = new Aresta(49, 58, 708, null);
+		r1[161] = new Aresta(50, 53, 414, null);
+		r1[162] = new Aresta(51, 59, 572, null);
+		r1[163] = new Aresta(52, 53, 457, null);
+		r1[164] = new Aresta(52, 59, 997, null);
+		r1[165] = new Aresta(52, 60, 832, null);
+		r1[166] = new Aresta(53, 54, 345, null);
+		r1[167] = new Aresta(53, 60, 730, null);
+		r1[168] = new Aresta(53, 61, 884, null);
+		r1[169] = new Aresta(54, 56, 114, null);
+		r1[170] = new Aresta(54, 61, 516, null);
+		r1[171] = new Aresta(55, 56, 508, null);
+		r1[172] = new Aresta(55, 57, 346, null);
+		r1[173] = new Aresta(55, 58, 498, null);
+		r1[174] = new Aresta(56, 57, 536, null);
+		r1[175] = new Aresta(56, 60, 953, null);
+		r1[176] = new Aresta(56, 61, 596, null);
+		r1[177] = new Aresta(56, 63, 902, null);
+		r1[178] = new Aresta(57, 58, 320, null);
+		r1[179] = new Aresta(57, 61, 744, null);
+		r1[180] = new Aresta(57, 62, 556, null);
+		r1[181] = new Aresta(57, 63, 692, null);
+		r1[182] = new Aresta(57, 69, 1309, null);
+		r1[183] = new Aresta(57, 70, 950, null);
+		r1[184] = new Aresta(58, 62, 485, null);
+		r1[185] = new Aresta(59, 60, 239, null);
+		r1[186] = new Aresta(59, 64, 644, null);
+		r1[187] = new Aresta(59, 66, 899, null);
+		r1[188] = new Aresta(60, 61, 599, null);
+		r1[189] = new Aresta(60, 64, 377, null);
+		r1[190] = new Aresta(60, 65, 569, null);
+		r1[191] = new Aresta(61, 63, 517, null);
+		r1[192] = new Aresta(61, 65, 409, null);
+		r1[193] = new Aresta(61, 68, 602, null);
+		r1[194] = new Aresta(62, 63, 344, null);
+		r1[195] = new Aresta(62, 70, 455, null);
+		r1[196] = new Aresta(63, 68, 532, null);
+		r1[197] = new Aresta(63, 70, 346, null);
+		r1[198] = new Aresta(64, 65, 445, null);
+		r1[199] = new Aresta(64, 66, 341, null);
+		r1[200] = new Aresta(64, 67, 419, null);
+		r1[201] = new Aresta(65, 66, 592, null);
+		r1[202] = new Aresta(65, 67, 520, null);
+		r1[203] = new Aresta(65, 68, 503, null);
+		r1[204] = new Aresta(66, 67, 208, null);
+		r1[205] = new Aresta(67, 68, 799, null);
+		r1[206] = new Aresta(67, 69, 766, null);
+		r1[207] = new Aresta(68, 69, 263, null);
+		r1[208] = new Aresta(68, 70, 601, null);
+		r1[209] = new Aresta(69, 70, 452, null);
+		
+		arestas.addAll(Arrays.asList(r1));
+		
+		return new Grafo(210,arestas);
+		
 	}
 }

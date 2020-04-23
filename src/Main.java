@@ -10,16 +10,23 @@ import java.util.*;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
-		execucao(20);
-		execucao(40);
-		execucao(60);
-		execucao(80);
+		execucao(20, true);
+		execucao(20, false);
+		execucao(40, true);
+		execucao(40, false);
+		execucao(60, true);
+		execucao(60, false);
+		execucao(80, true);
+		execucao(80, false);
 		
 	}
 	
-	static void execucao(int tam) throws IOException {
-		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/exec.txt", true);
-		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/exec.txt"));
+	static void execucao(int tam, boolean cond) throws IOException {
+		String pasta = cond ? "Arredondado" : "NaoArredondado";
+		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"
+				+ tam + "/" + pasta + "/exec.txt", true);
+		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/"
+				+ tam + "/" + pasta +  "/exec.txt"));
 		int val = 0;
 		while(br.readLine()!=null){
 			val++;
@@ -28,10 +35,11 @@ public class Main {
 		num.append("a\n");
 		num.flush();
 		num.close();
-		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/tabelas/tabela"+ val +".csv");
-		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(
-				"C:/Users/byeh9/Multimodal/src/populacao/" + tam + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
-		Grafo c = new CArestas().getGrafo(59);
+		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"
+				+ tam + "/" + pasta +  "/tabelas/tabela"+ val +".csv");
+		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream("C:/Users/byeh9/Multimodal/src/populacao/"
+				+ tam + "/" + pasta + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
+		Grafo c = new CArestas().getGrafo();
 		
 		AGenetico ag = new AGenetico(c.getMatriz(), new ArrayList<>(), 1, 20,21);
 		for (int i = 0; i < tam; i++) {
@@ -49,7 +57,7 @@ public class Main {
 			ios.append("geração: " + i + ": \n");
 			ios.append(ag.getCaminhos().toString() + "\n");
 			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
-			ag.populacao();
+			ag.populacao(cond);
 			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + ag.media() + ";\n");
 			System.out.println("geração " + i);
 			System.out.println("número de caminhos guardados: " + ag.getCaminhos().size());
