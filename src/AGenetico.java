@@ -96,7 +96,13 @@ class AGenetico {
 			if (r.getFitness() > media())
 				selecao[0]++;
 		});
-		caminhos.removeIf(caminho -> caminho.getFitness() > media());
+		caminhos.removeIf((caminho)->{
+			if(caminho.getFitness() > media()){
+				selecao[0]++;
+				return true;
+			}
+			return false;
+		});
 	}
 	
 	/**

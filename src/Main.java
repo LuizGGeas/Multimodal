@@ -22,10 +22,12 @@ public class Main {
 	}
 	
 	static void execucao(int tam, boolean cond) throws IOException {
+
+		String local = System.getProperty("user.dir");
 		String pasta = cond ? "Arredondado" : "NaoArredondado";
-		FileWriter num = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"
+		FileWriter num = new FileWriter(local + "/src/populacao/"
 				+ tam + "/" + pasta + "/exec.txt", true);
-		BufferedReader br = new BufferedReader(new FileReader("C:/Users/byeh9/Multimodal/src/populacao/"
+		BufferedReader br = new BufferedReader(new FileReader(local+"/src/populacao/"
 				+ tam + "/" + pasta +  "/exec.txt"));
 		int val = 0;
 		while(br.readLine()!=null){
@@ -35,12 +37,13 @@ public class Main {
 		num.append("a\n");
 		num.flush();
 		num.close();
-		FileWriter csv = new FileWriter("C:/Users/byeh9/Multimodal/src/populacao/"
+		br.close();
+		FileWriter csv = new FileWriter(local + "/src/populacao/"
 				+ tam + "/" + pasta +  "/tabelas/tabela"+ val +".csv");
-		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream("C:/Users/byeh9/Multimodal/src/populacao/"
-				+ tam + "/" + pasta + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
+		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(local + "/src/populacao/"+ tam + "/"
+				+ pasta + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
 		Grafo c = new CArestas().getGrafo();
-		
+
 		AGenetico ag = new AGenetico(c.getMatriz(), new ArrayList<>(), 1, 20,21);
 		for (int i = 0; i < tam; i++) {
 			ag.caminhoR();
