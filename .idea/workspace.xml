@@ -20,29 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multimodal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Multimodal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/60/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/exec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CArestas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CArestas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,30 +40,6 @@
         <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>print</find>
-      <find>while</find>
-      <find />
-      <find>)</find>
-      <find>new A</find>
-      <find>(</find>
-      <find>}</find>
-      <find>);</find>
-      <find>;</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>);</replace>
-      <replace>r1[] = = new A</replace>
-      <replace>r1[] = new A</replace>
-      <replace>(</replace>
-      <replace>, null);</replace>
-      <replace>&amp;</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\byeh9\Multimodal\src\população\população</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -108,7 +64,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -234,7 +190,7 @@
       <workItem from="1587646053852" duration="9418000" />
       <workItem from="1587679274552" duration="1499000" />
       <workItem from="1588186360513" duration="4568000" />
-      <workItem from="1588436113535" duration="1163000" />
+      <workItem from="1588436113535" duration="2416000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -328,14 +284,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1320" height="385" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1588436473361" />
-    <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1588437053192">
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1588437571095">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="179" y="31" width="1007" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1588437053192" />
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1588437571095" />
+    <state x="471" y="311" width="424" height="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588437546481">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="471" y="311" width="424" height="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1588437546481" />
     <state x="266" y="55" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1588190547983">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="266" y="55" width="824" height="691" key="editAsTableFormatDialogDimension/0.27.1366.741@0.27.1366.741" timestamp="1588190547983" />
+    <state x="0" y="27" width="595" height="741" key="find.popup" timestamp="1588437807157">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="0" y="27" width="595" height="741" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1588437807157" />
     <state x="347" y="174" key="run.anything.popup" timestamp="1588190729538">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
