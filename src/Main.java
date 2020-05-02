@@ -57,18 +57,21 @@ public class Main {
 		while(ag.getCaminhos().size()>10 && i < 150){
 			i++;
 			int tvec = ag.getCaminhos().size();
-			ios.append("geração: " + i + ": \n");
-			ios.append(ag.getCaminhos().toString() + "\n");
-			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
+			ios.append("geração: ").append(String.valueOf(i)).append(": \n");
+			ios.append(ag.getCaminhos().toString()).append("\n");
+			ios.append("melhor indivíduo da geração:").append(String.valueOf(ag.melhor())).append("\n");
 			ag.populacao(cond);
-			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + ag.mediana() + "\n");
+			csv.append(String.valueOf(i)).append("; ")
+					.append(String.valueOf(tvec)).append("; ")
+					.append(String.valueOf(ag.getCaminhos().size())).append("; ")
+					.append(String.valueOf(ag)).append(String.valueOf(ag.mediana())).append("\n");
 			if(lm >= ag.mediana()) {
 				lm = ag.mediana();
 				melhorGeracao = i;
 			}
 			if(i >= verificar) {
 				if (lm < ag.mediana()) {
-					ios.append("melhor valor é da geração " + melhorGeracao + "!!!!\n");
+					ios.append("melhor valor é da geração ").append(String.valueOf(melhorGeracao)).append("!!!!\n");
 					break;
 				}
 				verificar += 10;
