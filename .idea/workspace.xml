@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multimodal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Multimodal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Aresta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Aresta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/CArestas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/CArestas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Caminho.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Caminho.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Content.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Grafo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Grafo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Types.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Types.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/40/Arredondado/exec.txt" afterDir="false" />
@@ -21,8 +34,15 @@
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CArestas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CArestas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/exec.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +108,11 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -213,7 +233,8 @@
       <workItem from="1587405859655" duration="1553000" />
       <workItem from="1587646053852" duration="9418000" />
       <workItem from="1587679274552" duration="1499000" />
-      <workItem from="1588186360513" duration="1299000" />
+      <workItem from="1588186360513" duration="4568000" />
+      <workItem from="1588436113535" duration="1163000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -283,25 +304,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="código funcional" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1318" height="383" key="GridCell.Tab.0.bottom" timestamp="1588187632624">
+    <state x="312" y="79" width="732" height="644" key="#Inspections" timestamp="1588436911353">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="383" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588187632624" />
-    <state width="1318" height="383" key="GridCell.Tab.0.center" timestamp="1588187632623">
+    <state x="312" y="79" width="732" height="644" key="#Inspections/0.27.1366.741@0.27.1366.741" timestamp="1588436911353" />
+    <state x="166" y="27" width="1024" height="741" key="#Project_Structure" timestamp="1588436836492">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="383" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1588187632623" />
-    <state width="1318" height="383" key="GridCell.Tab.0.left" timestamp="1588187632623">
+    <state x="166" y="27" width="1024" height="741" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1588436836492" />
+    <state width="1320" height="385" key="GridCell.Tab.0.bottom" timestamp="1588436473361">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="383" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1588187632623" />
-    <state width="1318" height="383" key="GridCell.Tab.0.right" timestamp="1588187632624">
+    <state width="1320" height="385" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588436473361" />
+    <state width="1320" height="385" key="GridCell.Tab.0.center" timestamp="1588436473360">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="383" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1588187632624" />
-    <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1588186976914">
+    <state width="1320" height="385" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1588436473360" />
+    <state width="1320" height="385" key="GridCell.Tab.0.left" timestamp="1588436473360">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="179" y="31" width="1007" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1588186976914" />
+    <state width="1320" height="385" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1588436473360" />
+    <state width="1320" height="385" key="GridCell.Tab.0.right" timestamp="1588436473361">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="385" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1588436473361" />
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1588437053192">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1588437053192" />
+    <state x="266" y="55" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1588190547983">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="266" y="55" width="824" height="691" key="editAsTableFormatDialogDimension/0.27.1366.741@0.27.1366.741" timestamp="1588190547983" />
+    <state x="347" y="174" key="run.anything.popup" timestamp="1588190729538">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="347" y="174" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1588190729538" />
   </component>
 </project>

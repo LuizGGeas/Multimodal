@@ -92,23 +92,20 @@ class AGenetico {
 			mutacao++;
 		});
 		novos.forEach(this::adicionarNotRepetidos);
-		caminhos.forEach(r -> {
-			if (r.getFitness() > media())
+
+		for(int i=0; i < caminhos.size(); i++ ){
+			if(caminhos.get(i).getFitness() >  mediana()){
+				caminhos.remove(i);
 				selecao[0]++;
-		});
-		caminhos.removeIf((caminho)->{
-			if(caminho.getFitness() > media()){
-				selecao[0]++;
-				return true;
 			}
-			return false;
-		});
+		}
+
 	}
-	
+
 	/**
 	 * @param r: caminho a ser verificado se existe na população atual
 	 */
-	
+
 	private void adicionarNotRepetidos(Caminho r) {
 		if (!caminhos.contains(r) && r.validacao(matriz))
 			caminhos.add(r);
@@ -122,7 +119,7 @@ class AGenetico {
 				caminhos.add(r);
 		}
 	}
-	
+
 	/**
 	 * @param index seleciona para o que será usada a seleção, assim usando diferentes valores que serão utilizados para
 	 *              a geração de novos elementos
@@ -143,7 +140,7 @@ class AGenetico {
 		}
 		return novoCaminhos;
 	}
-	
+
 	/**
 	 * funcao que define se haverá arredondamento ou não para o processamento das próximas gerações
 	 */
@@ -167,16 +164,17 @@ class AGenetico {
 		}
 		return qnt;
 	}
-	
+
 	/**
 	 * @return calcula a média do fitness da população para processamento de futuras gerações
 	 */
-	int media() {
-		int j = 0;
-		for (Caminho i : caminhos) {
-			j += i.getFitness();
+	int mediana() {
+		ordenador(caminhos);
+		if(caminhos.size()%2 == 0) {
+			return ((caminhos.get((int)Math.ceil(caminhos.size() / 2)).getFitness() +
+					caminhos.get((int)Math.floor(caminhos.size() / 2)).getFitness()) / 2);
 		}
-		return j / caminhos.size();
+		return caminhos.get(caminhos.size()/2).getFitness();
 	}
 	
 	/**

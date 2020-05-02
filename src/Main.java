@@ -48,7 +48,7 @@ public class Main {
 		for (int i = 0; i < tam; i++) {
 			ag.caminhoR();
 		}
-		int lm = Integer.MAX_VALUE-1;
+		double lm = Integer.MAX_VALUE-1;
 		int i = 0;
 		int verificar = 10;
 		int melhorGeracao = 0;
@@ -61,13 +61,13 @@ public class Main {
 			ios.append(ag.getCaminhos().toString() + "\n");
 			ios.append("melhor indivíduo da geração:" + ag.melhor() + "\n");
 			ag.populacao(cond);
-			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + ag.media() + "\n");
-			if(lm >= ag.media()) {
-				lm = ag.media();
+			csv.append(i + "; " + tvec + "; " + ag.getCaminhos().size() + "; " + ag + ag.mediana() + "\n");
+			if(lm >= ag.mediana()) {
+				lm = ag.mediana();
 				melhorGeracao = i;
 			}
 			if(i >= verificar) {
-				if (lm < ag.media()) {
+				if (lm < ag.mediana()) {
 					ios.append("melhor valor é da geração " + melhorGeracao + "!!!!\n");
 					break;
 				}
