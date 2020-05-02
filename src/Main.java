@@ -42,7 +42,7 @@ public class Main {
 				+ tam + "/" + pasta +  "/tabelas/tabela"+ val +".csv");
 		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(local + "/src/populacao/"+ tam + "/"
 				+ pasta + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
-		Grafo c = new CArestas().getGrafo();
+		Grafo c = new CArestas().getGrafo2();
 
 		AGenetico ag = new AGenetico(c.getMatriz(), new ArrayList<>(), 1, 20,21);
 		for (int i = 0; i < tam; i++) {

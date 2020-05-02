@@ -18,7 +18,7 @@ class AGenetico {
 	private int[] cruzamento = {0, 0, 0, 0};
 	private int mutacao = 0;
 	private int[] selecao = {0, 0, 0};
-	private double[] percent = {0.1, 0.5, 0.03};
+	private double[] percent = {0.2, 0.6, 0.3};
 	private int antes;
 	
 	/**
@@ -117,6 +117,8 @@ class AGenetico {
 			} while (caminhos.contains(r) && i > 0);
 			if (i > 0 && !caminhos.contains(r))
 				caminhos.add(r);
+			else
+				selecao[0]++;
 		}
 	}
 
@@ -150,10 +152,10 @@ class AGenetico {
 			if (index == 1){
 				qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
 				if(qnt % 2 != 0)
-					qnt--;
+					qnt++;
 			}
 			else if (index == 2){
-				qnt = (caminhos.size()*percent[2]) < 1 ? 1 : (int)Math.floor(caminhos.size()*percent[2]);
+				qnt = (int)Math.ceil(caminhos.size()*percent[2]);
 			}
 		}
 		else{
