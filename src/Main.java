@@ -54,7 +54,7 @@ public class Main {
 		int melhorGeracao = 0;
 		csv.append("geracao; tamanhoAntesOP; tamanhoDepoisOP; quantidadeCruzados; taxaCruzamento; " +
 				"taxaMutacao; Nummutacao; NumElitismo; melhor; mediana;\n");
-		while(ag.getCaminhos().size()>5 && i < 150){
+		while(ag.getCaminhos().size()>10 && i < 150){
 			i++;
 			int tvec = ag.getCaminhos().size();
 			ios.append("geração: ").append(String.valueOf(i)).append(": \n");

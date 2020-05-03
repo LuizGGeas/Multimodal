@@ -108,12 +108,11 @@ class AGenetico {
 	 */
 
 	private void adicionarNotRepetidos(Caminho r) {
-		if (!caminhos.contains(r) && r.validacao(matriz))
-			caminhos.add(r);
-		else {
+		if (caminhos.contains(r)) {
 			int i = 10;
 			do {
 				r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
+				//r.mutacao(matriz);
 				i--;
 			} while (caminhos.contains(r) && i > 0);
 			if (caminhos.contains(r)) {
@@ -121,8 +120,8 @@ class AGenetico {
 				if(!r.validacao(matriz))
 					r.setFitness();
 			}
-			caminhos.add(r);
 		}
+		caminhos.add(r);
 	}
 
 	/**
