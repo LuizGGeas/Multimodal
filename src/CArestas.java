@@ -11,7 +11,7 @@ class CArestas {
 	
 	private final ArrayList<Aresta> arestas = new ArrayList<>();
 	
-	Grafo getGrafo1() {
+	AGenetico getGrafo1() {
 		
 		
 		Aresta[] r1 = new Aresta[41];
@@ -62,10 +62,10 @@ class CArestas {
 		
 		arestas.addAll(Arrays.asList(r1));
 		
-		return new Grafo(27, arestas);
+		return new AGenetico(new Grafo(27, arestas).getMatriz(), new ArrayList<>(), 0,26,27);
 	}
 	
-	Grafo getGrafo() {
+	AGenetico getGrafo() {
 		Aresta[] r1 = new Aresta[59];
 		
 		r1[0] = new Aresta(1,2,7,Types.TREM);
@@ -129,10 +129,10 @@ class CArestas {
 		r1[58] = new Aresta(19,20,2,Types.PRIVADO);
 		
 		arestas.addAll(Arrays.asList(r1));
-		return new Grafo(21,arestas);
+		return new AGenetico(new Grafo(21,arestas).getMatriz(), new ArrayList<>(), 1, 20,21);
 	}
 	
-	Grafo getGrafo2(){
+	AGenetico getGrafo2(){
 		Aresta[] r1= new Aresta[210];
 		
 		r1[0] = new Aresta(1, 2, 206, Types.PRIVADO);
@@ -347,8 +347,7 @@ class CArestas {
 		r1[209] = new Aresta(69, 70, 452, Types.TRANSFERENCIA);
 		
 		arestas.addAll(Arrays.asList(r1));
-		
-		return new Grafo(210,arestas);
+		return new AGenetico(new Grafo(210,arestas).getMatriz(), new ArrayList<>(), 1, 70,71);
 		
 	}
 }

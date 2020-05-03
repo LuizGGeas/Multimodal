@@ -42,19 +42,19 @@ public class Main {
 				+ tam + "/" + pasta +  "/tabelas/tabela"+ val +".csv");
 		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(local + "/src/populacao/"+ tam + "/"
 				+ pasta + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
-		Grafo c = new CArestas().getGrafo2();
+		AGenetico ag = new CArestas().getGrafo2();
 
-		AGenetico ag = new AGenetico(c.getMatriz(), new ArrayList<>(), 1, 20,21);
+
 		for (int i = 0; i < tam; i++) {
 			ag.caminhoR();
 		}
-		double lm = Integer.MAX_VALUE-1;
+		double lm = ag.mediana();
 		int i = 0;
 		int verificar = 10;
 		int melhorGeracao = 0;
-		csv.append("geracao; tamanhoAntesOP; tamanhoDepoisOP; quantidadeCruzados; taxaCruzamento; NumdoisPontos; NumumPonto;" +
-				" NumOutro; NãoCruzados; taxaMutacao; SerMutado; Nummutacao; NumElitismo; media\n");
-		while(ag.getCaminhos().size()>10 && i < 150){
+		csv.append("geracao; tamanhoAntesOP; tamanhoDepoisOP; quantidadeCruzados; taxaCruzamento; " +
+				"taxaMutacao; Nummutacao; NumElitismo; melhor; mediana;\n");
+		while(ag.getCaminhos().size()>5 && i < 150){
 			i++;
 			int tvec = ag.getCaminhos().size();
 			ios.append("geração: ").append(String.valueOf(i)).append(": \n");
@@ -64,7 +64,7 @@ public class Main {
 			csv.append(String.valueOf(i)).append("; ")
 					.append(String.valueOf(tvec)).append("; ")
 					.append(String.valueOf(ag.getCaminhos().size())).append("; ")
-					.append(String.valueOf(ag)).append(String.valueOf(ag.mediana())).append("\n");
+					.append(String.valueOf(ag)).append(String.valueOf(ag.mediana())).append(";\n");
 			if(lm >= ag.mediana()) {
 				lm = ag.mediana();
 				melhorGeracao = i;

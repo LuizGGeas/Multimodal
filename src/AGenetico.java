@@ -18,7 +18,7 @@ class AGenetico {
 	private int[] cruzamento = {0, 0, 0, 0};
 	private int mutacao = 0;
 	private int[] selecao = {0, 0, 0};
-	private double[] percent = {0.2, 0.6, 0.3};
+	private final double[] percent = {0.2, 0.6, 0.15};
 	private int antes;
 	
 	/**
@@ -83,6 +83,7 @@ class AGenetico {
 		ArrayList<Caminho> novos = selecao(1, cond);
 		for (int i = 0; i < novos.size() / 2; i++) {
 			novos.get(i).cross(novos.get(novos.size() / 2 + i), cruzamento);
+			novos.get(novos.size() / 2 + i).cross(novos.get(i), cruzamento);
 		}
 		
 		novos.forEach(this::adicionarNotRepetidos);
@@ -94,7 +95,7 @@ class AGenetico {
 		novos.forEach(this::adicionarNotRepetidos);
 
 		for(int i=0; i < caminhos.size(); i++ ){
-			if(caminhos.get(i).getFitness() >  mediana()){
+			if(caminhos.get(i).getFitness() >  mediana()*0.4){
 				caminhos.remove(i);
 				selecao[0]++;
 			}
@@ -115,10 +116,12 @@ class AGenetico {
 				r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
 				i--;
 			} while (caminhos.contains(r) && i > 0);
-			if (i > 0 && !caminhos.contains(r))
-				caminhos.add(r);
-			else
-				selecao[0]++;
+			if (caminhos.contains(r)) {
+				r.mutacao(matriz);
+				if(!r.validacao(matriz))
+					r.setFitness();
+			}
+			caminhos.add(r);
 		}
 	}
 
@@ -150,7 +153,7 @@ class AGenetico {
 		int qnt = 0;
 		if (cond){
 			if (index == 1){
-				qnt = (caminhos.size() > 20) ? (int)(caminhos.size() * percent[0]) : (int)(caminhos.size() * percent[1]);
+				qnt = (int) ((caminhos.size() > 20) ? (caminhos.size() * percent[0]) : (caminhos.size() * percent[1]));
 				if(qnt % 2 != 0)
 					qnt++;
 			}
@@ -171,12 +174,13 @@ class AGenetico {
 	 * @return calcula a média do fitness da população para processamento de futuras gerações
 	 */
 	int mediana() {
-		ordenador(caminhos);
-		if(caminhos.size()%2 == 0) {
-			return ((caminhos.get((int)Math.ceil(caminhos.size() / 2)).getFitness() +
-					caminhos.get((int)Math.floor(caminhos.size() / 2)).getFitness()) / 2);
+		ArrayList<Caminho> clone = (ArrayList<Caminho>) caminhos.clone();
+		ordenador(clone);
+		if(clone.size()%2 == 0) {
+			return ((clone.get((int)Math.ceil(clone.size() / 2)).getFitness() +
+					clone.get((int)Math.floor(clone.size() / 2)).getFitness()) / 2);
 		}
-		return caminhos.get(caminhos.size()/2).getFitness();
+		return clone.get(clone.size()/2).getFitness();
 	}
 	
 	/**
@@ -206,7 +210,6 @@ class AGenetico {
 	@Override
 	public String toString() {
 		double val = antes >= 20 ? percent[0] : percent[1];
-		return selecao[1] + "; " + val + "; " + cruzamento[0] + "; " + cruzamento[1] + "; " + cruzamento[2] + "; " +
-				cruzamento[3] + "; " + percent[2] + "; " + selecao[2] + "; " + mutacao + "; " + selecao[0] + ";";
+		return selecao[1] + "; " + val + "; " + percent[2] + "; " + selecao[2] + "; " + selecao[0] + "; " + melhor() + "; ";
 	}
 }
