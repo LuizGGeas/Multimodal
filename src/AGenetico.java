@@ -95,7 +95,7 @@ class AGenetico {
 		novos.forEach(this::adicionarNotRepetidos);
 
 		for(int i=0; i < caminhos.size(); i++ ){
-			if(caminhos.get(i).getFitness() >  mediana()*0.4){
+			if(caminhos.get(i).getFitness() > mediana()*0.4){
 				caminhos.remove(i);
 				selecao[0]++;
 			}
@@ -111,8 +111,8 @@ class AGenetico {
 		if (caminhos.contains(r)) {
 			int i = 10;
 			do {
-				r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
-				//r.mutacao(matriz);
+				//r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
+				r.mutacao(matriz);
 				i--;
 			} while (caminhos.contains(r) && i > 0);
 			if (caminhos.contains(r)) {

@@ -18,6 +18,8 @@ public class Main {
 		execucao(60, false);
 		execucao(80, true);
 		execucao(80, false);
+		execucao(200, true);
+		execucao(200, false);
 		
 	}
 	
