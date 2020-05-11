@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author LuizGabriel
@@ -39,7 +40,7 @@ public class Caminho {
 			do {
 				ArrayList<Integer> poss = new ArrayList<>();
 				for (int j = 0; j < tam; j++) {
-					if (matriz[i][j].getValue() > 0)
+					if (matriz[i][j].getValue() > 0 && !poss.contains(j))
 						poss.add(j);
 				}
 				if (!poss.isEmpty()) {
@@ -51,7 +52,8 @@ public class Caminho {
 					if (poss.contains(end)) {
 						caminho.add(end);
 						break;
-					} else {
+					}
+					else {
 						int no = r.nextInt(poss.size());
 						caminho.add(poss.get(no));
 						i = poss.get(no);
@@ -116,19 +118,19 @@ public class Caminho {
 	 * @param c2 caminho a ser utilizado para o cruzamento
 	 * @return volta um novo caminho para ser possivelmente adicionado à lista de população
 	 */
-	ArrayList<Integer> cross(Caminho c2, int[] cruzamneto) {
+	ArrayList<Integer> cross(Caminho c2, int[] cruzamneto){
 		ArrayList<Integer> path = new ArrayList<>();
 		if (c2.getPath().size() != caminho.size()) {
 			ArrayList<Integer> contido = new ArrayList<>();
 			caminho.forEach(r -> {
-				if (c2.caminho.contains(r))
+				if (c2.caminho.contains(r) && !contido.contains(r) && r!= inicio && r != end)
 					contido.add(r);
 			});
 			int i;
 			int j = 0;
 			if (contido.size() > 2) {
 				i = contido.get(r.nextInt(contido.size()));
-				contido.removeIf(r->r == i);
+				contido.remove(contido.indexOf(i));
 				j = contido.get(r.nextInt(contido.size()));
 			} else if (contido.size() == 2) {
 				i = contido.get(0);
@@ -137,7 +139,6 @@ public class Caminho {
 				i = contido.get(0);
 			} else
 				i = 0;
-			
 			if (contido.size() > 1) {
 				cruzamneto[0]++;
 				if(caminho.indexOf(i) < caminho.indexOf(j)){
@@ -258,19 +259,28 @@ public class Caminho {
 	 * função confere se o caminho fornecido é uma solução para chegar do nó 0 ao nó 26
 	 */
 	boolean validacao(Content[][] matriz) {
-		for (int i = 0; i < caminho.size() - 1; i++) {
-			if (matriz[caminho.get(i)][caminho.get(i + 1)].getValue() <= 0) {
-				if (caminho.get(i + 1) != end) {
-					caminho.add(caminho.remove(i + 1));
-					i--;
+		AtomicInteger a = new AtomicInteger(1);
+		caminho.forEach((r) -> {
+			if(caminho.lastIndexOf(r) != caminho.indexOf(r))
+				a.set(0);
+		});
+		if(a.get() != 1) return false;
+		if(caminho.contains(inicio) && caminho.contains(end)){
+			for (int i = 0; i < caminho.size() - 1; i++) {
+				if (matriz[caminho.get(i)][caminho.get(i + 1)].getValue() <= 0) {
+					if (caminho.get(i + 1) != end) {
+						caminho.add(caminho.remove(i + 1));
+						i--;
+					}
+					if (i > 1 && caminho.get(i + 1) == end) {
+						caminho.add(caminho.remove(i + 1));
+						caminho.add(caminho.remove(i));
+						i -= 2;
+					}
+					if (i == 1 && caminho.get(i + 1) == end) {
+						return false;
+					}
 				}
-				if (i > 1 && caminho.get(i + 1) == end) {
-					caminho.add(caminho.remove(i + 1));
-					caminho.add(caminho.remove(i));
-					i -= 2;
-				}
-				if (caminho.get(i + 1) == end && i == 1)
-					return false;
 			}
 		}
 		return true;

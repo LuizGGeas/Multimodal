@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
@@ -71,19 +72,51 @@ class AGenetico {
 		selecao[2] = 0;
 		antes = 0;
 	}
+
+	void populacao2(){
+		ArrayList<Caminho> novos = new ArrayList<>();
+		ArrayList<Caminho> cruzar = selecao(20);
+		for(int i = 0; i < cruzar.size()/2; i++){
+
+			Caminho c = new Caminho(matriz, cruzar.get(i).cross(cruzar.get(cruzar.size()/2+1), cruzamento), inicio, end, tam);
+			if(c.validacao(matriz))
+				novos.add(c);
+		}
+		ArrayList<Caminho> mutar = selecao(15);
+		mutar.forEach(r -> r.mutacao(matriz));
+		mutar.forEach((r) -> {
+			if(r.validacao(matriz))
+				novos.add(r);
+		});
+		ordenador(caminhos);
+		for (int i = 0; i < 20; i++){
+			novos.add(caminhos.get(i));
+		}
+
+		caminhos.clear();
+		caminhos.addAll(novos);
+		for (int i= caminhos.size(); i < 80; i++){
+			caminhoR();
+		}
+	}
 	
 	/**
 	 * Faz o processamento da população em todas as gerações
 	 * Realiza a chamada de função de mutação e cruzamento, utilizando da função de seleção
 	 * Faz a seleção elitista dos n melhores elementos, onde estes serão melhores que a média de fitness da população
 	 */
-	void populacao(boolean cond) {
+	void populacao(boolean cond){
 		reinit();
 		antes = caminhos.size();
 		ArrayList<Caminho> novos = selecao(1, cond);
 		for (int i = 0; i < novos.size() / 2; i++) {
-			novos.get(i).cross(novos.get(novos.size() / 2 + i), cruzamento);
-			novos.get(novos.size() / 2 + i).cross(novos.get(i), cruzamento);
+
+			Caminho a = new Caminho(matriz, novos.get(i).cross(novos.get(novos.size() / 2 + i), cruzamento), inicio, end, tam);
+			Caminho b = new Caminho(matriz, novos.get(novos.size() / 2 + i).cross(novos.get(i), cruzamento), inicio, end, tam);
+			if (a.validacao(matriz))
+				caminhos.add(a);
+			if(b.validacao(matriz))
+				caminhos.add(b);
 		}
 		
 		novos.forEach(this::adicionarNotRepetidos);
@@ -111,8 +144,8 @@ class AGenetico {
 		if (caminhos.contains(r)) {
 			int i = 10;
 			do {
-				//r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
-				r.mutacao(matriz);
+				r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
+				//r.mutacao(matriz);
 				i--;
 			} while (caminhos.contains(r) && i > 0);
 			if (caminhos.contains(r)) {
@@ -134,6 +167,21 @@ class AGenetico {
 		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
 		for (int j = 0; j < qnt; j++) {
 			selecao[index] = qnt;
+			ArrayList<Caminho> seletos = new ArrayList<>();
+			for (int i = 0; i < ((qnt / 5) > 0 ? qnt / 5 : qnt); i++) {
+				Random r = new Random();
+				seletos.add(caminhos.get(r.nextInt(caminhos.size())));
+			}
+			ordenador(seletos);
+			novoCaminhos.add(seletos.get(0));
+		}
+		return novoCaminhos;
+	}
+
+	private ArrayList<Caminho> selecao(int tam) {
+		int qnt = tam;
+		ArrayList<Caminho> novoCaminhos = new ArrayList<>();
+		for (int j = 0; j < qnt; j++) {
 			ArrayList<Caminho> seletos = new ArrayList<>();
 			for (int i = 0; i < ((qnt / 5) > 0 ? qnt / 5 : qnt); i++) {
 				Random r = new Random();
@@ -175,11 +223,11 @@ class AGenetico {
 	int mediana() {
 		ArrayList<Caminho> clone = (ArrayList<Caminho>) caminhos.clone();
 		ordenador(clone);
-		if(clone.size()%2 == 0) {
+		if(clone.size()%2 == 0 && clone.size()>0) {
 			return ((clone.get((int)Math.ceil(clone.size() / 2)).getFitness() +
 					clone.get((int)Math.floor(clone.size() / 2)).getFitness()) / 2);
 		}
-		return clone.get(clone.size()/2).getFitness();
+		return clone.size() > 0 ? clone.get(clone.size()/2).getFitness() : -1;
 	}
 	
 	/**

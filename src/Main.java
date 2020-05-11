@@ -1,6 +1,5 @@
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
 
 /**
  * @author LuizGabriel
@@ -56,18 +55,18 @@ public class Main {
 		int melhorGeracao = 0;
 		csv.append("geracao; tamanhoAntesOP; tamanhoDepoisOP; quantidadeCruzados; taxaCruzamento; " +
 				"taxaMutacao; Nummutacao; NumElitismo; melhor; mediana;\n");
-		while(ag.getCaminhos().size()>10 && i < 150){
+		while(ag.getCaminhos().size()>0 && i < 150){
 			i++;
 			int tvec = ag.getCaminhos().size();
 			ios.append("geração: ").append(String.valueOf(i)).append(": \n");
 			ios.append(ag.getCaminhos().toString()).append("\n");
 			ios.append("melhor indivíduo da geração:").append(String.valueOf(ag.melhor())).append("\n");
-			ag.populacao(cond);
+			ag.populacao2();
 			csv.append(String.valueOf(i)).append("; ")
 					.append(String.valueOf(tvec)).append("; ")
 					.append(String.valueOf(ag.getCaminhos().size())).append("; ")
 					.append(String.valueOf(ag)).append(String.valueOf(ag.mediana())).append(";\n");
-			if(lm >= ag.mediana()) {
+			/*if(lm >= ag.mediana()) {
 				lm = ag.mediana();
 				melhorGeracao = i;
 			}
@@ -77,7 +76,7 @@ public class Main {
 					break;
 				}
 				verificar += 10;
-			}
+			}*/
 		}
 		ios.append("______________________________________________________________________________________________________________________________\n");
 		ag.ordenador(ag.getCaminhos());
