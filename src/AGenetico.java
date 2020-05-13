@@ -10,7 +10,7 @@ import java.util.Random;
  */
 class AGenetico {
 	
-	private Content[][] matriz;
+	private final Content[][] matriz;
 	private ArrayList<Caminho> caminhos;
 	private final int inicio;
 	private final int end;
@@ -22,15 +22,14 @@ class AGenetico {
 	
 	/**
 	 * @param matriz   gerada na classe Grafo
-	 * @param caminhos gerados na classe Main
 	 * @param inicio   indicado na classe Main
 	 * @param end      indicado na classe Main
 	 * @param tam      contém a quantidade de elementos usados para a geração da matriz
 	 *                 <p>
 	 *                 Realiza a inicialização dos valores a serem utilizados globalmente nesta classe
 	 */
-	AGenetico(Content[][] matriz, ArrayList<Caminho> caminhos, int inicio, int end, int tam) {
-		this.caminhos = caminhos;
+	AGenetico(Content[][] matriz, int inicio, int end, int tam) {
+		this.caminhos = new ArrayList<>();
 		this.matriz = matriz;
 		this.inicio = inicio;
 		this.end = end;
@@ -75,7 +74,9 @@ class AGenetico {
 		ArrayList<Caminho> cruzar = selecao(1, true, (int)(tam*0.25));
 		for(int i = 0; i < cruzar.size()/2; i++){
 
-			Caminho c = new Caminho(matriz, cruzar.get(i).cross(cruzar.get(cruzar.size()/2+1), cruzamento), inicio, end, tam);
+			Caminho c;
+			c = new Caminho(matriz, cruzar.get(i)
+					.cross(cruzar.get(cruzar.size()/2+i), cruzamento), inicio, end, tam);
 			if(c.validacao(matriz))
 				novos.add(c);
 		}
@@ -111,8 +112,10 @@ class AGenetico {
 		ArrayList<Caminho> novos = selecao(1, cond, 0);
 		for (int i = 0; i < novos.size() / 2; i++) {
 
-			Caminho a = new Caminho(matriz, novos.get(i).cross(novos.get(novos.size() / 2 + i), cruzamento), inicio, end, tam);
-			Caminho b = new Caminho(matriz, novos.get(novos.size() / 2 + i).cross(novos.get(i), cruzamento), inicio, end, tam);
+			Caminho a = new Caminho(matriz, novos.get(i).cross(novos.get(novos.size() / 2 + i),
+					cruzamento), inicio, end, tam);
+			Caminho b = new Caminho(matriz, novos.get(novos.size() / 2 + i).cross(novos.get(i),
+					cruzamento), inicio, end, tam);
 			if (a.validacao(matriz))
 				caminhos.add(a);
 			if(b.validacao(matriz))
@@ -155,8 +158,9 @@ class AGenetico {
 	}
 
 	/**
-	 * @param index seleciona para o que será usada a seleção, assim usando diferentes valores que serão utilizados para
-	 *              a geração de novos elementos
+	 * @param index seleciona para o que será usada a seleção,
+	 *              assim usando diferentes valores que serão
+	 *              utilizados para a geração de novos elementos
 	 * @return caminhos a serem usados futuramente
 	 */
 	private ArrayList<Caminho> selecao(int index, boolean cond, int tam ) {
@@ -212,7 +216,8 @@ class AGenetico {
 	}
 	
 	/**
-	 * @return busca o caminho com melhor fitness para salvar em caso de necessidade de comparação posterior
+	 * @return busca o caminho com melhor fitness para salvar
+	 * em caso de necessidade de comparação posterior
 	 */
 	Caminho melhor() {
 		int i = Integer.MAX_VALUE - 1;
@@ -238,6 +243,7 @@ class AGenetico {
 	@Override
 	public String toString() {
 		double val = antes >= 20 ? percent[0] : percent[1];
-		return selecao[1] + "; " + val + "; " + percent[2] + "; " + selecao[2] + "; " + selecao[0] + "; " + melhor() + "; ";
+		return selecao[1] + "; " + val + "; " + percent[2] + "; " + selecao[2]
+				+ "; " + selecao[0] + "; " + melhor() + "; ";
 	}
 }

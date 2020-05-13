@@ -62,7 +62,7 @@ class CArestas {
 		
 		arestas.addAll(Arrays.asList(r1));
 		
-		return new AGenetico(new Grafo(27, arestas).getMatriz(), new ArrayList<>(), 0,26,27);
+		return new AGenetico(new Grafo(27, arestas).getMatriz(), 0,26,27);
 	}
 	
 	AGenetico getGrafo() {
@@ -129,7 +129,7 @@ class CArestas {
 		r1[58] = new Aresta(19,20,2,Types.PRIVADO);
 		
 		arestas.addAll(Arrays.asList(r1));
-		return new AGenetico(new Grafo(21,arestas).getMatriz(), new ArrayList<>(), 1, 20,21);
+		return new AGenetico(new Grafo(21,arestas).getMatriz(),1, 20,21);
 	}
 	
 	AGenetico getGrafo2(){
@@ -347,7 +347,7 @@ class CArestas {
 		r1[209] = new Aresta(69, 70, 452, Types.TRANSFERENCIA);
 		
 		arestas.addAll(Arrays.asList(r1));
-		return new AGenetico(new Grafo(210,arestas).getMatriz(), new ArrayList<>(), 1, 70,71);
+		return new AGenetico(new Grafo(210,arestas).getMatriz(),1, 70,71);
 		
 	}
 }
