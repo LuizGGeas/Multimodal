@@ -61,7 +61,7 @@ public class Main {
 			ios.append("geração: ").append(String.valueOf(i)).append(": \n");
 			ios.append(ag.getCaminhos().toString()).append("\n");
 			ios.append("melhor indivíduo da geração:").append(String.valueOf(ag.melhor())).append("\n");
-			ag.populacao2();
+			ag.populacao(tam);
 			csv.append(String.valueOf(i)).append("; ")
 					.append(String.valueOf(tvec)).append("; ")
 					.append(String.valueOf(ag.getCaminhos().size())).append("; ")
