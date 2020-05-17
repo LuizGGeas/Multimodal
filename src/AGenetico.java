@@ -69,25 +69,26 @@ class AGenetico {
 		antes = 0;
 	}
 
-	void populacao(int tam){
+	void populacao(int sizePop){
+		reinit();
+		percent[0] = 0.25;
 		ArrayList<Caminho> novos = new ArrayList<>();
-		ArrayList<Caminho> cruzar = selecao(1, true, (int)(tam*0.25));
+		ArrayList<Caminho> cruzar = selecao(1, true, (int)(sizePop*0.25));
 		for(int i = 0; i < cruzar.size()/2; i++){
 
-			Caminho c;
-			c = new Caminho(matriz, cruzar.get(i)
+			Caminho c = new Caminho(matriz, cruzar.get(i)
 					.cross(cruzar.get(cruzar.size()/2+i), cruzamento), inicio, end, tam);
 			if(c.validacao(matriz))
 				novos.add(c);
 		}
-		ArrayList<Caminho> mutar = selecao(2,true, (int)(tam*0.15));
+		ArrayList<Caminho> mutar = selecao(2,true, (int)(sizePop*0.15));
 		mutar.forEach(r -> r.mutacao(matriz));
 		mutar.forEach((r) -> {
 			if(r.validacao(matriz))
 				novos.add(r);
 		});
 		ordenador(caminhos);
-		for (int i = 0; i < caminhos.size()*0.25; i++){
+		for (int i = 0; i < caminhos.size()*0.2; i++){
 			novos.add(caminhos.get(i));
 		}
 		for (int i = (int)(caminhos.size()*0.9);i < caminhos.size(); i++){
@@ -96,7 +97,7 @@ class AGenetico {
 
 		caminhos.clear();
 		caminhos.addAll(novos);
-		for (int i= caminhos.size(); i < tam; i++){
+		for (int i= caminhos.size(); i < sizePop; i++){
 			caminhoR();
 		}
 	}
@@ -144,8 +145,8 @@ class AGenetico {
 		if (caminhos.contains(r)) {
 			int i = 10;
 			do {
-				r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
-				//r.mutacao(matriz);
+				//r = new Caminho(matriz, new ArrayList<>(), inicio, end, tam);
+				r.mutacao(matriz);
 				i--;
 			} while (caminhos.contains(r) && i > 0);
 			if (caminhos.contains(r)) {
@@ -242,7 +243,7 @@ class AGenetico {
 	
 	@Override
 	public String toString() {
-		double val = antes >= 20 ? percent[0] : percent[1];
+		double val = antes > 20 ? percent[0] : percent[1];
 		return selecao[1] + "; " + val + "; " + percent[2] + "; " + selecao[2]
 				+ "; " + selecao[0] + "; " + melhor() + "; ";
 	}

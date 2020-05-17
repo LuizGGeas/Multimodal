@@ -10,13 +10,16 @@ import java.util.Arrays;
 class CArestas {
 	
 	private final ArrayList<Aresta> arestas = new ArrayList<>();
-	
-	AGenetico getGrafo1() {
-		
-		
+
+	public AGenetico returnee(int returner){
+		if (returner == 1) return getGrafo();
+		else if(returner == 2) return getGrafo1();
+		else return getGrafo2();
+	}
+
+	private AGenetico getGrafo() {
 		Aresta[] r1 = new Aresta[41];
-		
-		
+
 		r1[0] = new Aresta(0,1,1, Types.ONIBUS);
 		r1[1] = new Aresta(0,2,1, Types.PRIVADO);
 		r1[2] = new Aresta(2,4,9, Types.PRIVADO);
@@ -65,7 +68,7 @@ class CArestas {
 		return new AGenetico(new Grafo(27, arestas).getMatriz(), 0,26,27);
 	}
 	
-	AGenetico getGrafo() {
+	private AGenetico getGrafo1() {
 		Aresta[] r1 = new Aresta[59];
 		
 		r1[0] = new Aresta(1,2,7,Types.TREM);
@@ -132,7 +135,7 @@ class CArestas {
 		return new AGenetico(new Grafo(21,arestas).getMatriz(),1, 20,21);
 	}
 	
-	AGenetico getGrafo2(){
+	private AGenetico getGrafo2(){
 		Aresta[] r1= new Aresta[210];
 		
 		r1[0] = new Aresta(1, 2, 206, Types.PRIVADO);
