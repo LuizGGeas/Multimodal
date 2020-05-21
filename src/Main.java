@@ -23,7 +23,7 @@ public class Main {
 	}
 	
 	static void execucao(int tam, boolean cond) throws IOException {
-
+		System.out.println("execução com população de tamanho " + tam);
 		String local = System.getProperty("user.dir");
 		String pasta = cond ? "Arredondado" : "NaoArredondado";
 		FileWriter num = new FileWriter(local + "/src/populacao/"

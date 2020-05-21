@@ -264,7 +264,10 @@ public class Caminho {
 			if(caminho.lastIndexOf(r) != caminho.indexOf(r))
 				a.set(0);
 		});
-		if(a.get() != 1) return false;
+		if(a.get() != 1) {
+			setFitness();
+			return false;
+		}
 		if(caminho.contains(inicio) && caminho.contains(end)){
 			for (int i = 0; i < caminho.size() - 1; i++) {
 				if (matriz[caminho.get(i)][caminho.get(i + 1)].getValue() <= 0) {
@@ -278,6 +281,7 @@ public class Caminho {
 						i -= 2;
 					}
 					if (i == 1 && caminho.get(i + 1) == end) {
+						setFitness();
 						return false;
 					}
 				}

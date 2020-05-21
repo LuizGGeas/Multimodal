@@ -20,129 +20,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f6b167-bc13-414d-a44a-c018f1fde92c" name="Default Changelist" comment="código funcional">
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao101.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao102.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao103.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao104.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao105.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao106.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela101.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela102.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela103.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela104.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela105.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela106.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao85.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao86.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao87.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao88.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao89.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela84.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela85.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela86.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela87.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela88.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela89.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao19.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao21.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao22.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao23.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao24.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela19.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela20.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela21.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela22.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela23.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela24.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao19.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao21.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao22.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao23.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao24.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela19.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela20.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela21.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela22.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela23.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela24.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao80.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao81.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao82.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao83.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao85.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela80.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela81.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela82.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela83.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela84.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela85.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao79.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao80.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao81.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao82.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao83.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela79.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela80.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela81.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela82.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela83.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela84.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao79.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao80.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao81.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao82.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao83.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela79.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela80.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela81.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela82.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela83.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela84.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao79.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao80.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao81.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao82.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao83.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela79.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela80.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela81.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela82.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela83.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela84.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao79.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao80.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao81.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao82.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao83.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela79.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela80.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela81.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela82.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela83.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela84.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao79.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao80.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao81.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao82.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao83.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela79.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela80.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela81.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela82.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela83.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela84.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao108.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao109.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao110.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao111.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao112.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao122.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/populacao/populacao124.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela108.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela109.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela110.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela111.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela112.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela122.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/tabelas/tabela124.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao91.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao92.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao93.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao94.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/populacao/populacao95.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela100.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela91.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela92.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela93.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela94.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/tabelas/tabela95.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao26.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/populacao/populacao27.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/Arredondado/tabelas/tabela27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao26.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/populacao/populacao27.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/200/NaoArredondado/tabelas/tabela27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao87.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao88.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao89.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao90.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao91.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/populacao/populacao96.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela87.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela88.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela89.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela90.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela91.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/Arredondado/tabelas/tabela96.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao86.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao87.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao88.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao89.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/populacao/populacao90.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela86.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela87.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela88.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela89.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/40/NaoArredondado/tabelas/tabela90.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao86.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao87.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao88.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/populacao/populacao89.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela86.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela87.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela88.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/Arredondado/tabelas/tabela89.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao86.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/populacao/populacao87.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela86.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/60/NaoArredondado/tabelas/tabela87.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao86.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/populacao/populacao87.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela86.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/Arredondado/tabelas/tabela87.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao86.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/populacao/populacao87.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela86.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/populacao/80/NaoArredondado/tabelas/tabela87.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/AGenetico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/CArestas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/CArestas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Caminho.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Caminho.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/Arredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
@@ -155,7 +111,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/Arredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multimodal/populacao/80/NaoArredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AGenetico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CArestas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CArestas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Caminho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Caminho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/20/Arredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/Arredondado/exec.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/populacao/20/NaoArredondado/exec.txt" afterDir="false" />
@@ -353,7 +309,8 @@
       <workItem from="1589391511139" duration="2737000" />
       <workItem from="1589464204134" duration="643000" />
       <workItem from="1589722604947" duration="168000" />
-      <workItem from="1589722807776" duration="1581000" />
+      <workItem from="1589722807776" duration="6082000" />
+      <workItem from="1590076205766" duration="1150000" />
     </task>
     <task id="LOCAL-00001" summary="criação de validação de caminho e modificação nas funções da classe grafo">
       <created>1583279037694</created>
@@ -440,22 +397,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="329" y="198" width="697" height="406" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1589239325598" />
-    <state width="1320" height="197" key="GridCell.Tab.0.bottom" timestamp="1589724376705">
+    <state width="1320" height="197" key="GridCell.Tab.0.bottom" timestamp="1590077293318">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="197" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1589724376705" />
-    <state width="1320" height="197" key="GridCell.Tab.0.center" timestamp="1589724376702">
+    <state width="1320" height="197" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1590077293318" />
+    <state width="1320" height="197" key="GridCell.Tab.0.center" timestamp="1590077293317">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="197" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1589724376702" />
-    <state width="1320" height="197" key="GridCell.Tab.0.left" timestamp="1589724376701">
+    <state width="1320" height="197" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1590077293317" />
+    <state width="1320" height="197" key="GridCell.Tab.0.left" timestamp="1590077293317">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="197" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1589724376701" />
-    <state width="1320" height="197" key="GridCell.Tab.0.right" timestamp="1589724376703">
+    <state width="1320" height="197" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1590077293317" />
+    <state width="1320" height="197" key="GridCell.Tab.0.right" timestamp="1590077293318">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="197" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589724376703" />
+    <state width="1320" height="197" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1590077293318" />
     <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1588437571095">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

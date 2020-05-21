@@ -1,5 +1,0 @@
-geracao; tamanhoAntesOP; tamanhoDepoisOP; quantidadeCruzados; taxaCruzamento; NumdoisPontos; NumumPonto; NumOutro; NãoCruzados; taxaMutacao; SerMutado; Nummutacao; NumElitismo; media;
-1; 20; 18; 10; 0.1; 2; 0; 3; 0; 0.03; 0; 0; 12;42;
-2; 18; 13; 9; 0.5; 4; 0; 0; 0; 0.03; 0; 0; 14;36;
-3; 13; 10; 6; 0.5; 1; 0; 2; 0; 0.03; 0; 0; 9;34;
-
