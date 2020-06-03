@@ -241,7 +241,7 @@ public class Caminho {
 	
 	@Override
 	public String toString() {
-		return caminho.toString() + " - " + getFitness();
+		return caminho.toString() + ": " + getFitness() + ", trocas: " + trocas;
 	}
 	
 	@Override

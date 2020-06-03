@@ -43,7 +43,7 @@ public class Main {
 				+ tam + "/" + pasta +  "/tabelas/tabela"+ val +".csv");
 		OutputStreamWriter ios = new OutputStreamWriter(new FileOutputStream(local + "/src/populacao/"+ tam + "/"
 				+ pasta + "/populacao/populacao"+val+".txt"), StandardCharsets.ISO_8859_1);
-		AGenetico ag =  new CArestas().returnee(3);
+		AGenetico ag =  new CArestas().returnee(0);
 
 
 		for (int i = 0; i < tam; i++) {
